@@ -1,0 +1,16 @@
+digraph G { 
+"Africa"[label="\N (6)", color=black, shape=polygon ]
+"Africa"->"Antarctica"
+"Africa"->"Asia"
+"Antarctica"[label="\N (5)", color=black, shape=polygon ]
+"Antarctica"->"Africa"
+"Antarctica"->"Antarctica"
+"America"[label="\N (10)", color=black, shape=polygon ]
+"America"->"Asia"
+"America"->"Antarctica"
+"America"->"Australia"
+"Australia"[label="\N (8)" , color=black ]
+"Australia"->"Asia"
+"Asia"[label="\N (9)" , color=black ]
+"Asia"->"America"
+}

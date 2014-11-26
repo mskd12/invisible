@@ -1,0 +1,39 @@
+digraph G { 
+0[label="\N (12)", fillcolor=green, style=filled, shape=polygon ]
+0->2
+0->7
+1[label="\N (22)" , style=filled, fillcolor=green ]
+1->0
+1->2
+1->6
+2[label="\N (18)" , style=filled, fillcolor=green ]
+2->1
+2->2
+2->5
+2->8
+3[label="\N (3)" , style=filled, fillcolor=green ]
+3->0
+3->4
+3->7
+3->9
+4[label="\N (0)", fillcolor=green, style=filled, shape=polygon ]
+4->1
+4->7
+5[label="\N (2)", fillcolor=green, style=filled, shape=polygon ]
+5->3
+5->5
+5->7
+6[label="\N (5)", fillcolor=green, style=filled, shape=polygon ]
+6->2
+6->5
+7[label="\N (20)" , style=filled, fillcolor=green ]
+7->1
+7->7
+8[label="\N (8)" , style=filled, fillcolor=green ]
+8->5
+8->6
+9[label="\N (7)", color=black, shape=polygon ]
+9->1
+9->8
+9->9
+}

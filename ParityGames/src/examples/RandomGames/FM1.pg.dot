@@ -1,0 +1,63 @@
+digraph G { 
+"x"[label="\N (1)", color=black, shape=polygon ]
+"x"->"x"
+"s"[label="\N (20)" , color=black ]
+"s"->"z"[color=blue]
+"s"->"f0"
+"z"[label="\N (32)", color=black, shape=polygon ]
+"z"->"x"
+"f0"[label="\N (27)", color=black, shape=polygon ]
+"f0"->"e0"
+"c"[label="\N (18)" , color=black ]
+"c"->"s"[color=blue]
+"c"->"r"
+"r"[label="\N (22)" , color=black ]
+"r"->"z"[color=blue]
+"r"->"g0"
+"g0"[label="\N (10)" , color=black ]
+"g0"->"f0"[color=blue]
+"g0"->"k0"
+"a0"[label="\N (12)", color=black, shape=polygon ]
+"a0"->"t0"
+"t0"[label="\N (11)" , color=black ]
+"t0"->"s"[color=blue]
+"t0"->"c"
+"t0"->"r"
+"a1"[label="\N (14)", color=black, shape=polygon ]
+"a1"->"t1"
+"t1"[label="\N (13)" , color=black ]
+"t1"->"s"[color=blue]
+"t1"->"r"
+"t1"->"t0"
+"a2"[label="\N (16)", color=black, shape=polygon ]
+"a2"->"t2"
+"t2"[label="\N (15)" , color=black ]
+"t2"->"s"[color=blue]
+"t2"->"r"
+"t2"->"t1"
+"d(0,1)"[label="\N (3)" , color=black ]
+"d(0,1)"->"s"[color=blue]
+"d(0,1)"->"r"
+"d(0,1)"->"a0"
+"d(0,1)"->"a1"
+"d(0,1)"->"a2"
+"d(0,1)"->"d(0,0)"
+"d(0,0)"[label="\N (5)" , color=black ]
+"d(0,0)"->"s"[color=blue]
+"d(0,0)"->"r"
+"d(0,0)"->"a0"
+"d(0,0)"->"a1"
+"d(0,0)"->"a2"
+"d(0,0)"->"e0"
+"e0"[label="\N (8)", color=black, shape=polygon ]
+"e0"->"d(0,1)"
+"e0"->"h0"
+"h0"[label="\N (30)", color=black, shape=polygon ]
+"h0"->"k0"
+"m0"[label="\N (23)", color=black, shape=polygon ]
+"m0"->"e0"
+"q0"[label="\N (29)", color=black, shape=polygon ]
+"q0"->"h0"
+"k0"[label="\N (25)" , color=black ]
+"k0"->"z"[color=blue]
+}

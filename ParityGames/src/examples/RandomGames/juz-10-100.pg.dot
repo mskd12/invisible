@@ -1,0 +1,18 @@
+digraph G { 
+196[label="\N (6375)" , color=black ]
+396[label="\N (6172)", color=black, shape=polygon ]
+396->397
+396->196
+397[label="\N (6174)" , color=black ]
+397->396
+398[label="\N (6176)", color=black, shape=polygon ]
+398->397
+4197[label="\N (395)", color=black, shape=polygon ]
+4197->4198
+4197->397
+4198[label="\N (198)" , color=black ]
+4198->4197
+4199[label="\N (397)", color=black, shape=polygon ]
+4199->4198
+4199->4199
+}

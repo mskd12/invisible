@@ -1,0 +1,318 @@
+digraph G { 
+"0"[label="\N (66)" , color=black ]
+"0"->"48"
+"1"[label="\N (85)", color=black, shape=polygon ]
+"1"->"30"
+"1"->"71"
+"2"[label="\N (137)", color=black, shape=polygon ]
+"2"->"12"
+"2"->"81"
+"3"[label="\N (182)", color=black, shape=polygon ]
+"3"->"1"
+"3"->"3"
+"3"->"14"
+"3"->"89"
+"4"[label="\N (56)", color=black, shape=polygon ]
+"4"->"18"
+"4"->"30"
+"4"->"47"
+"5"[label="\N (23)" , color=black ]
+"5"->"50"
+"6"[label="\N (9)", color=black, shape=polygon ]
+"6"->"14"
+"6"->"40"
+"6"->"48"
+"6"->"50"
+"7"[label="\N (58)", color=black, shape=polygon ]
+"7"->"1"
+"7"->"70"
+"7"->"97"
+"8"[label="\N (200)" , color=black ]
+"8"->"78"
+"9"[label="\N (190)", color=black, shape=polygon ]
+"9"->"4"
+"9"->"21"
+"9"->"59"
+"10"[label="\N (243)", color=black, shape=polygon ]
+"10"->"57"
+"10"->"92"
+"11"[label="\N (217)" , color=black ]
+"11"->"16"
+"12"[label="\N (98)", color=black, shape=polygon ]
+"12"->"0"
+"12"->"27"
+"13"[label="\N (17)" , color=black ]
+"13"->"40"
+"14"[label="\N (140)" , color=black ]
+"14"->"13"
+"15"[label="\N (61)", color=black, shape=polygon ]
+"15"->"0"
+"15"->"30"
+"15"->"85"
+"16"[label="\N (130)" , color=black ]
+"16"->"10"
+"17"[label="\N (127)" , color=black ]
+"17"->"24"
+"18"[label="\N (236)", color=black, shape=polygon ]
+"18"->"29"
+"18"->"32"
+"18"->"52"
+"18"->"56"
+"18"->"60"
+"19"[label="\N (145)", color=black, shape=polygon ]
+"19"->"48"
+"19"->"85"
+"20"[label="\N (248)" , color=black ]
+"20"->"60"
+"21"[label="\N (35)", color=black, shape=polygon ]
+"21"->"82"
+"21"->"87"
+"22"[label="\N (93)", color=black, shape=polygon ]
+"22"->"0"
+"22"->"2"
+"22"->"35"
+"23"[label="\N (100)", color=black, shape=polygon ]
+"23"->"47"
+"23"->"70"
+"23"->"81"
+"24"[label="\N (107)" , color=black ]
+"24"->"9"
+"25"[label="\N (49)", color=black, shape=polygon ]
+"25"->"35"
+"25"->"37"
+"25"->"74"
+"25"->"93"
+"25"->"94"
+"26"[label="\N (40)", color=black, shape=polygon ]
+"26"->"3"
+"26"->"61"
+"26"->"71"
+"27"[label="\N (12)" , color=black ]
+"27"->"9"
+"28"[label="\N (148)" , color=black ]
+"28"->"21"
+"29"[label="\N (196)" , color=black ]
+"29"->"15"
+"30"[label="\N (8)", color=black, shape=polygon ]
+"30"->"0"
+"30"->"40"
+"31"[label="\N (152)" , color=black ]
+"31"->"29"
+"32"[label="\N (219)" , color=black ]
+"32"->"56"
+"33"[label="\N (245)" , color=black ]
+"33"->"21"
+"34"[label="\N (202)" , color=black ]
+"34"->"10"
+"35"[label="\N (101)", color=black, shape=polygon ]
+"35"->"38"
+"35"->"48"
+"35"->"89"
+"36"[label="\N (77)" , color=black ]
+"36"->"43"
+"37"[label="\N (60)", color=black, shape=polygon ]
+"37"->"35"
+"37"->"69"
+"37"->"93"
+"37"->"96"
+"38"[label="\N (237)", color=black, shape=polygon ]
+"38"->"7"
+"38"->"8"
+"38"->"12"
+"38"->"30"
+"38"->"44"
+"39"[label="\N (114)" , color=black ]
+"39"->"19"
+"40"[label="\N (203)" , color=black ]
+"40"->"8"
+"41"[label="\N (69)", color=black, shape=polygon ]
+"41"->"16"
+"41"->"39"
+"41"->"41"
+"41"->"89"
+"42"[label="\N (198)" , color=black ]
+"42"->"14"
+"43"[label="\N (119)", color=black, shape=polygon ]
+"43"->"3"
+"43"->"30"
+"43"->"32"
+"44"[label="\N (192)", color=black, shape=polygon ]
+"44"->"16"
+"44"->"51"
+"44"->"54"
+"44"->"56"
+"45"[label="\N (14)", color=black, shape=polygon ]
+"45"->"8"
+"45"->"40"
+"45"->"78"
+"46"[label="\N (216)", color=black, shape=polygon ]
+"46"->"12"
+"46"->"42"
+"46"->"46"
+"46"->"64"
+"46"->"94"
+"47"[label="\N (214)" , color=black ]
+"47"->"27"
+"48"[label="\N (210)" , color=black ]
+"48"->"54"
+"49"[label="\N (15)", color=black, shape=polygon ]
+"49"->"25"
+"49"->"65"
+"49"->"72"
+"49"->"94"
+"49"->"95"
+"50"[label="\N (147)" , color=black ]
+"50"->"23"
+"51"[label="\N (139)", color=black, shape=polygon ]
+"51"->"45"
+"51"->"65"
+"52"[label="\N (167)" , color=black ]
+"52"->"32"
+"53"[label="\N (131)" , color=black ]
+"53"->"28"
+"54"[label="\N (27)", color=black, shape=polygon ]
+"54"->"52"
+"54"->"63"
+"55"[label="\N (115)", color=black, shape=polygon ]
+"55"->"16"
+"55"->"24"
+"55"->"28"
+"55"->"89"
+"56"[label="\N (134)", color=black, shape=polygon ]
+"56"->"4"
+"56"->"17"
+"56"->"27"
+"56"->"81"
+"56"->"94"
+"57"[label="\N (109)", color=black, shape=polygon ]
+"57"->"30"
+"57"->"98"
+"58"[label="\N (18)" , color=black ]
+"58"->"41"
+"59"[label="\N (55)" , color=black ]
+"59"->"54"
+"60"[label="\N (25)", color=black, shape=polygon ]
+"60"->"36"
+"60"->"63"
+"60"->"97"
+"61"[label="\N (194)" , color=black ]
+"61"->"27"
+"62"[label="\N (121)" , color=black ]
+"62"->"15"
+"63"[label="\N (175)" , color=black ]
+"63"->"21"
+"64"[label="\N (159)", color=black, shape=polygon ]
+"64"->"18"
+"64"->"25"
+"64"->"45"
+"64"->"51"
+"64"->"91"
+"65"[label="\N (224)" , color=black ]
+"65"->"2"
+"66"[label="\N (161)" , color=black ]
+"66"->"23"
+"67"[label="\N (233)", color=black, shape=polygon ]
+"67"->"26"
+"67"->"29"
+"67"->"54"
+"68"[label="\N (223)", color=black, shape=polygon ]
+"68"->"8"
+"68"->"21"
+"68"->"54"
+"68"->"70"
+"68"->"93"
+"69"[label="\N (79)", color=black, shape=polygon ]
+"69"->"17"
+"69"->"63"
+"69"->"72"
+"70"[label="\N (187)", color=black, shape=polygon ]
+"70"->"40"
+"70"->"48"
+"71"[label="\N (103)", color=black, shape=polygon ]
+"71"->"4"
+"71"->"31"
+"71"->"50"
+"71"->"77"
+"71"->"84"
+"72"[label="\N (117)", color=black, shape=polygon ]
+"72"->"77"
+"72"->"85"
+"72"->"88"
+"72"->"91"
+"73"[label="\N (42)" , color=black ]
+"73"->"25"
+"74"[label="\N (221)", color=black, shape=polygon ]
+"74"->"44"
+"74"->"55"
+"75"[label="\N (53)", color=black, shape=polygon ]
+"75"->"28"
+"75"->"60"
+"76"[label="\N (111)" , color=black ]
+"76"->"25"
+"77"[label="\N (142)" , color=black ]
+"77"->"25"
+"78"[label="\N (169)" , color=black ]
+"78"->"4"
+"79"[label="\N (99)", color=black, shape=polygon ]
+"79"->"12"
+"79"->"63"
+"79"->"65"
+"80"[label="\N (157)", color=black, shape=polygon ]
+"80"->"55"
+"80"->"61"
+"80"->"67"
+"81"[label="\N (63)", color=black, shape=polygon ]
+"81"->"29"
+"81"->"46"
+"81"->"61"
+"82"[label="\N (184)" , color=black ]
+"82"->"2"
+"83"[label="\N (0)" , color=black ]
+"83"->"2"
+"84"[label="\N (133)", color=black, shape=polygon ]
+"84"->"7"
+"84"->"28"
+"84"->"44"
+"84"->"78"
+"84"->"99"
+"85"[label="\N (105)", color=black, shape=polygon ]
+"85"->"32"
+"85"->"56"
+"85"->"67"
+"86"[label="\N (70)" , color=black ]
+"86"->"18"
+"87"[label="\N (89)", color=black, shape=polygon ]
+"87"->"13"
+"87"->"37"
+"87"->"81"
+"87"->"84"
+"87"->"93"
+"88"[label="\N (7)" , color=black ]
+"88"->"17"
+"89"[label="\N (95)" , color=black ]
+"89"->"36"
+"90"[label="\N (206)" , color=black ]
+"90"->"2"
+"91"[label="\N (230)", color=black, shape=polygon ]
+"91"->"30"
+"91"->"41"
+"91"->"59"
+"91"->"81"
+"92"[label="\N (247)" , color=black ]
+"93"[label="\N (241)" , color=black ]
+"93"->"49"
+"94"[label="\N (177)" , color=black ]
+"94"->"8"
+"95"[label="\N (208)" , color=black ]
+"95"->"42"
+"96"[label="\N (11)", color=black, shape=polygon ]
+"96"->"37"
+"96"->"44"
+"96"->"79"
+"97"[label="\N (10)" , color=black ]
+"97"->"15"
+"98"[label="\N (71)" , color=black ]
+"98"->"72"
+"99"[label="\N (87)" , color=black ]
+"99"->"26"
+}

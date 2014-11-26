@@ -1,0 +1,16 @@
+digraph G { 
+"c0"[label="\N (3)" , color=black ]
+"c0"->"q0"
+"e0"[label="\N (9)" , color=black ]
+"e0"->"p1"
+"p0"[label="\N (14)", color=black, shape=polygon ]
+"p0"->"c0"
+"p0"->"p1"
+"p1"[label="\N (7)", color=black, shape=polygon ]
+"p1"->"p0"
+"q0"[label="\N (15)", color=black, shape=polygon ]
+"x0"[label="\N (12)", color=black, shape=polygon ]
+"x0"->"e0"
+"x1"[label="\N (11)", color=black, shape=polygon ]
+"x1"->"x0"
+}

@@ -1,0 +1,1645 @@
+digraph G { 
+"q"[label="\N (1039)", color=black, shape=polygon ]
+"p"[label="\N (1320)", color=black, shape=polygon ]
+"p"->"q"
+"e0"[label="\N (1040)", color=black, shape=polygon ]
+"e0"->"k0"
+"e0"->"d(0,0)"
+"e0"->"d(0,1)"
+"e0"->"d(0,2)"
+"e0"->"d(0,3)"
+"e0"->"d(0,4)"
+"e0"->"d(0,5)"
+"e0"->"d(0,6)"
+"e0"->"d(0,7)"
+"e0"->"d(0,8)"
+"e0"->"d(0,9)"
+"e0"->"d(0,10)"
+"e0"->"d(0,11)"
+"e0"->"d(0,12)"
+"e0"->"d(0,13)"
+"e0"->"d(0,14)"
+"e0"->"d(0,15)"
+"k0"[label="\N (1300)" , color=black ]
+"k0"->"r(1,0,0)"
+"d(0,0)"[label="\N (0)" , color=black ]
+"d(0,0)"->"p"
+"d(0,1)"[label="\N (2)" , color=black ]
+"d(0,1)"->"p"
+"d(0,2)"[label="\N (4)" , color=black ]
+"d(0,2)"->"p"
+"d(0,3)"[label="\N (6)" , color=black ]
+"d(0,3)"->"p"
+"d(0,4)"[label="\N (8)" , color=black ]
+"d(0,4)"->"p"
+"d(0,5)"[label="\N (10)" , color=black ]
+"d(0,5)"->"p"
+"d(0,6)"[label="\N (12)" , color=black ]
+"d(0,6)"->"p"
+"d(0,7)"[label="\N (14)" , color=black ]
+"d(0,7)"->"p"
+"d(0,8)"[label="\N (16)" , color=black ]
+"d(0,8)"->"p"
+"d(0,9)"[label="\N (18)" , color=black ]
+"d(0,9)"->"p"
+"d(0,10)"[label="\N (20)" , color=black ]
+"d(0,10)"->"p"
+"d(0,11)"[label="\N (22)" , color=black ]
+"d(0,11)"->"p"
+"d(0,12)"[label="\N (24)" , color=black ]
+"d(0,12)"->"p"
+"d(0,13)"[label="\N (26)" , color=black ]
+"d(0,13)"->"p"
+"d(0,14)"[label="\N (28)" , color=black ]
+"d(0,14)"->"p"
+"d(0,15)"[label="\N (30)" , color=black ]
+"d(0,15)"->"p"
+"r(1,0,0)"[label="\N (32)", color=black, shape=polygon ]
+"r(1,0,0)"->"a(1,0)"
+"r(1,0,1)"[label="\N (34)", color=black, shape=polygon ]
+"r(1,0,1)"->"a(1,0)"
+"r(1,0,2)"[label="\N (36)", color=black, shape=polygon ]
+"r(1,0,2)"->"a(1,0)"
+"r(1,0,3)"[label="\N (38)", color=black, shape=polygon ]
+"r(1,0,3)"->"a(1,0)"
+"r(1,1,0)"[label="\N (40)", color=black, shape=polygon ]
+"r(1,1,0)"->"a(1,1)"
+"r(1,1,1)"[label="\N (42)", color=black, shape=polygon ]
+"r(1,1,1)"->"a(1,1)"
+"r(1,1,2)"[label="\N (44)", color=black, shape=polygon ]
+"r(1,1,2)"->"a(1,1)"
+"r(1,1,3)"[label="\N (46)", color=black, shape=polygon ]
+"r(1,1,3)"->"a(1,1)"
+"r(1,2,0)"[label="\N (48)", color=black, shape=polygon ]
+"r(1,2,0)"->"a(1,2)"
+"r(1,2,1)"[label="\N (50)", color=black, shape=polygon ]
+"r(1,2,1)"->"a(1,2)"
+"r(1,2,2)"[label="\N (52)", color=black, shape=polygon ]
+"r(1,2,2)"->"a(1,2)"
+"r(1,2,3)"[label="\N (54)", color=black, shape=polygon ]
+"r(1,2,3)"->"a(1,2)"
+"r(1,3,0)"[label="\N (56)", color=black, shape=polygon ]
+"r(1,3,0)"->"a(1,3)"
+"r(1,3,1)"[label="\N (58)", color=black, shape=polygon ]
+"r(1,3,1)"->"a(1,3)"
+"r(1,3,2)"[label="\N (60)", color=black, shape=polygon ]
+"r(1,3,2)"->"a(1,3)"
+"r(1,3,3)"[label="\N (62)", color=black, shape=polygon ]
+"r(1,3,3)"->"a(1,3)"
+"c(0,0)"[label="\N (64)", color=black, shape=polygon ]
+"c(0,0)"->"d(1,0)"
+"c(0,1)"[label="\N (66)", color=black, shape=polygon ]
+"c(0,1)"->"d(1,0)"
+"c(0,2)"[label="\N (68)", color=black, shape=polygon ]
+"c(0,2)"->"d(1,0)"
+"c(0,3)"[label="\N (70)", color=black, shape=polygon ]
+"c(0,3)"->"d(1,0)"
+"a(0,0)"[label="\N (1042)", color=black, shape=polygon ]
+"a(0,0)"->"c(0,0)"
+"a(0,0)"->"b(0,0,0)"
+"a(0,0)"->"b(0,0,1)"
+"a(0,0)"->"b(0,0,2)"
+"a(0,0)"->"b(0,0,3)"
+"c(0,0)"[label="\N (1044)", color=black, shape=polygon ]
+"c(0,0)"->"e0"
+"b(0,0,0)"[label="\N (72)" , color=black ]
+"b(0,0,0)"->"p"
+"b(0,0,1)"[label="\N (74)" , color=black ]
+"b(0,0,1)"->"p"
+"b(0,0,2)"[label="\N (76)" , color=black ]
+"b(0,0,2)"->"p"
+"b(0,0,3)"[label="\N (78)" , color=black ]
+"b(0,0,3)"->"p"
+46[label="\N (1220)", color=black, shape=polygon ]
+46->"d(1,0)"
+47[label="\N (1222)", color=black, shape=polygon ]
+47->"d(1,0)"
+48[label="\N (1224)", color=black, shape=polygon ]
+48->"d(1,0)"
+49[label="\N (1226)", color=black, shape=polygon ]
+49->"d(1,0)"
+"r(0,0,0)"[label="\N (80)", color=black, shape=polygon ]
+"r(0,0,0)"->"a(0,0)"
+"r(0,0,1)"[label="\N (82)", color=black, shape=polygon ]
+"r(0,0,1)"->"a(0,0)"
+"r(0,0,2)"[label="\N (84)", color=black, shape=polygon ]
+"r(0,0,2)"->"a(0,0)"
+"r(0,0,3)"[label="\N (86)", color=black, shape=polygon ]
+"r(0,0,3)"->"a(0,0)"
+"a(0,1)"[label="\N (1046)", color=black, shape=polygon ]
+"a(0,1)"->"c(0,0)"
+"a(0,1)"->"b(0,1,0)"
+"a(0,1)"->"b(0,1,1)"
+"a(0,1)"->"b(0,1,2)"
+"a(0,1)"->"b(0,1,3)"
+"b(0,1,0)"[label="\N (88)" , color=black ]
+"b(0,1,0)"->"p"
+"b(0,1,1)"[label="\N (90)" , color=black ]
+"b(0,1,1)"->"p"
+"b(0,1,2)"[label="\N (92)" , color=black ]
+"b(0,1,2)"->"p"
+"b(0,1,3)"[label="\N (94)" , color=black ]
+"b(0,1,3)"->"p"
+"r(0,1,0)"[label="\N (96)", color=black, shape=polygon ]
+"r(0,1,0)"->"a(0,1)"
+"r(0,1,1)"[label="\N (98)", color=black, shape=polygon ]
+"r(0,1,1)"->"a(0,1)"
+"r(0,1,2)"[label="\N (100)", color=black, shape=polygon ]
+"r(0,1,2)"->"a(0,1)"
+"r(0,1,3)"[label="\N (102)", color=black, shape=polygon ]
+"r(0,1,3)"->"a(0,1)"
+"a(0,2)"[label="\N (1048)", color=black, shape=polygon ]
+"a(0,2)"->"c(0,0)"
+"a(0,2)"->"b(0,2,0)"
+"a(0,2)"->"b(0,2,1)"
+"a(0,2)"->"b(0,2,2)"
+"a(0,2)"->"b(0,2,3)"
+"b(0,2,0)"[label="\N (104)" , color=black ]
+"b(0,2,0)"->"p"
+"b(0,2,1)"[label="\N (106)" , color=black ]
+"b(0,2,1)"->"p"
+"b(0,2,2)"[label="\N (108)" , color=black ]
+"b(0,2,2)"->"p"
+"b(0,2,3)"[label="\N (110)" , color=black ]
+"b(0,2,3)"->"p"
+"r(0,2,0)"[label="\N (112)", color=black, shape=polygon ]
+"r(0,2,0)"->"a(0,2)"
+"r(0,2,1)"[label="\N (114)", color=black, shape=polygon ]
+"r(0,2,1)"->"a(0,2)"
+"r(0,2,2)"[label="\N (116)", color=black, shape=polygon ]
+"r(0,2,2)"->"a(0,2)"
+"r(0,2,3)"[label="\N (118)", color=black, shape=polygon ]
+"r(0,2,3)"->"a(0,2)"
+"a(0,3)"[label="\N (1050)", color=black, shape=polygon ]
+"a(0,3)"->"c(0,0)"
+"a(0,3)"->"b(0,3,0)"
+"a(0,3)"->"b(0,3,1)"
+"a(0,3)"->"b(0,3,2)"
+"a(0,3)"->"b(0,3,3)"
+"b(0,3,0)"[label="\N (120)" , color=black ]
+"b(0,3,0)"->"p"
+"b(0,3,1)"[label="\N (122)" , color=black ]
+"b(0,3,1)"->"p"
+"b(0,3,2)"[label="\N (124)" , color=black ]
+"b(0,3,2)"->"p"
+"b(0,3,3)"[label="\N (126)" , color=black ]
+"b(0,3,3)"->"p"
+"r(0,3,0)"[label="\N (128)", color=black, shape=polygon ]
+"r(0,3,0)"->"a(0,3)"
+"r(0,3,1)"[label="\N (130)", color=black, shape=polygon ]
+"r(0,3,1)"->"a(0,3)"
+"r(0,3,2)"[label="\N (132)", color=black, shape=polygon ]
+"r(0,3,2)"->"a(0,3)"
+"r(0,3,3)"[label="\N (134)", color=black, shape=polygon ]
+"r(0,3,3)"->"a(0,3)"
+"d(1,0)"[label="\N (136)" , color=black ]
+"d(1,0)"->"p"
+"c(0,1)"[label="\N (1052)", color=black, shape=polygon ]
+"c(0,1)"->"e0"
+"c(0,2)"[label="\N (1054)", color=black, shape=polygon ]
+"c(0,2)"->"e0"
+"c(0,3)"[label="\N (1056)", color=black, shape=polygon ]
+"c(0,3)"->"e0"
+"e1"[label="\N (1058)", color=black, shape=polygon ]
+"e1"->"d(1,0)"
+"e1"->"k1"
+"e1"->"d(1,1)"
+"e1"->"d(1,2)"
+"e1"->"d(1,3)"
+"e1"->"d(1,4)"
+"e1"->"d(1,5)"
+"e1"->"d(1,6)"
+"e1"->"d(1,7)"
+"e1"->"d(1,8)"
+"e1"->"d(1,9)"
+"e1"->"d(1,10)"
+"e1"->"d(1,11)"
+"e1"->"d(1,12)"
+"e1"->"d(1,13)"
+"e1"->"d(1,14)"
+"e1"->"d(1,15)"
+"k1"[label="\N (1302)" , color=black ]
+"k1"->"r(2,0,0)"
+"d(1,1)"[label="\N (138)" , color=black ]
+"d(1,1)"->"p"
+"d(1,2)"[label="\N (140)" , color=black ]
+"d(1,2)"->"p"
+"d(1,3)"[label="\N (142)" , color=black ]
+"d(1,3)"->"p"
+"d(1,4)"[label="\N (144)" , color=black ]
+"d(1,4)"->"p"
+"d(1,5)"[label="\N (146)" , color=black ]
+"d(1,5)"->"p"
+"d(1,6)"[label="\N (148)" , color=black ]
+"d(1,6)"->"p"
+"d(1,7)"[label="\N (150)" , color=black ]
+"d(1,7)"->"p"
+"d(1,8)"[label="\N (152)" , color=black ]
+"d(1,8)"->"p"
+"d(1,9)"[label="\N (154)" , color=black ]
+"d(1,9)"->"p"
+"d(1,10)"[label="\N (156)" , color=black ]
+"d(1,10)"->"p"
+"d(1,11)"[label="\N (158)" , color=black ]
+"d(1,11)"->"p"
+"d(1,12)"[label="\N (160)" , color=black ]
+"d(1,12)"->"p"
+"d(1,13)"[label="\N (162)" , color=black ]
+"d(1,13)"->"p"
+"d(1,14)"[label="\N (164)" , color=black ]
+"d(1,14)"->"p"
+"d(1,15)"[label="\N (166)" , color=black ]
+"d(1,15)"->"p"
+"r(2,0,0)"[label="\N (168)", color=black, shape=polygon ]
+"r(2,0,0)"->"a(2,0)"
+"r(2,0,1)"[label="\N (170)", color=black, shape=polygon ]
+"r(2,0,1)"->"a(2,0)"
+"r(2,0,2)"[label="\N (172)", color=black, shape=polygon ]
+"r(2,0,2)"->"a(2,0)"
+"r(2,0,3)"[label="\N (174)", color=black, shape=polygon ]
+"r(2,0,3)"->"a(2,0)"
+"r(2,1,0)"[label="\N (176)", color=black, shape=polygon ]
+"r(2,1,0)"->"a(2,1)"
+"r(2,1,1)"[label="\N (178)", color=black, shape=polygon ]
+"r(2,1,1)"->"a(2,1)"
+"r(2,1,2)"[label="\N (180)", color=black, shape=polygon ]
+"r(2,1,2)"->"a(2,1)"
+"r(2,1,3)"[label="\N (182)", color=black, shape=polygon ]
+"r(2,1,3)"->"a(2,1)"
+"r(2,2,0)"[label="\N (184)", color=black, shape=polygon ]
+"r(2,2,0)"->"a(2,2)"
+"r(2,2,1)"[label="\N (186)", color=black, shape=polygon ]
+"r(2,2,1)"->"a(2,2)"
+"r(2,2,2)"[label="\N (188)", color=black, shape=polygon ]
+"r(2,2,2)"->"a(2,2)"
+"r(2,2,3)"[label="\N (190)", color=black, shape=polygon ]
+"r(2,2,3)"->"a(2,2)"
+"r(2,3,0)"[label="\N (192)", color=black, shape=polygon ]
+"r(2,3,0)"->"a(2,3)"
+"r(2,3,1)"[label="\N (194)", color=black, shape=polygon ]
+"r(2,3,1)"->"a(2,3)"
+"r(2,3,2)"[label="\N (196)", color=black, shape=polygon ]
+"r(2,3,2)"->"a(2,3)"
+"r(2,3,3)"[label="\N (198)", color=black, shape=polygon ]
+"r(2,3,3)"->"a(2,3)"
+"c(1,0)"[label="\N (200)", color=black, shape=polygon ]
+"c(1,0)"->"d(2,0)"
+"c(1,1)"[label="\N (202)", color=black, shape=polygon ]
+"c(1,1)"->"d(2,0)"
+"c(1,2)"[label="\N (204)", color=black, shape=polygon ]
+"c(1,2)"->"d(2,0)"
+"c(1,3)"[label="\N (206)", color=black, shape=polygon ]
+"c(1,3)"->"d(2,0)"
+"a(1,0)"[label="\N (1060)", color=black, shape=polygon ]
+"a(1,0)"->"c(1,0)"
+"a(1,0)"->"b(1,0,0)"
+"a(1,0)"->"b(1,0,1)"
+"a(1,0)"->"b(1,0,2)"
+"a(1,0)"->"b(1,0,3)"
+"c(1,0)"[label="\N (1062)", color=black, shape=polygon ]
+"c(1,0)"->"e1"
+"b(1,0,0)"[label="\N (208)" , color=black ]
+"b(1,0,0)"->"p"
+"b(1,0,1)"[label="\N (210)" , color=black ]
+"b(1,0,1)"->"p"
+"b(1,0,2)"[label="\N (212)" , color=black ]
+"b(1,0,2)"->"p"
+"b(1,0,3)"[label="\N (214)" , color=black ]
+"b(1,0,3)"->"p"
+128[label="\N (1228)", color=black, shape=polygon ]
+128->"d(2,0)"
+129[label="\N (1230)", color=black, shape=polygon ]
+129->"d(2,0)"
+130[label="\N (1232)", color=black, shape=polygon ]
+130->"d(2,0)"
+131[label="\N (1234)", color=black, shape=polygon ]
+131->"d(2,0)"
+"a(1,1)"[label="\N (1064)", color=black, shape=polygon ]
+"a(1,1)"->"c(1,0)"
+"a(1,1)"->"b(1,1,0)"
+"a(1,1)"->"b(1,1,1)"
+"a(1,1)"->"b(1,1,2)"
+"a(1,1)"->"b(1,1,3)"
+"b(1,1,0)"[label="\N (216)" , color=black ]
+"b(1,1,0)"->"p"
+"b(1,1,1)"[label="\N (218)" , color=black ]
+"b(1,1,1)"->"p"
+"b(1,1,2)"[label="\N (220)" , color=black ]
+"b(1,1,2)"->"p"
+"b(1,1,3)"[label="\N (222)" , color=black ]
+"b(1,1,3)"->"p"
+"a(1,2)"[label="\N (1066)", color=black, shape=polygon ]
+"a(1,2)"->"c(1,0)"
+"a(1,2)"->"b(1,2,0)"
+"a(1,2)"->"b(1,2,1)"
+"a(1,2)"->"b(1,2,2)"
+"a(1,2)"->"b(1,2,3)"
+"b(1,2,0)"[label="\N (224)" , color=black ]
+"b(1,2,0)"->"p"
+"b(1,2,1)"[label="\N (226)" , color=black ]
+"b(1,2,1)"->"p"
+"b(1,2,2)"[label="\N (228)" , color=black ]
+"b(1,2,2)"->"p"
+"b(1,2,3)"[label="\N (230)" , color=black ]
+"b(1,2,3)"->"p"
+"a(1,3)"[label="\N (1068)", color=black, shape=polygon ]
+"a(1,3)"->"c(1,0)"
+"a(1,3)"->"b(1,3,0)"
+"a(1,3)"->"b(1,3,1)"
+"a(1,3)"->"b(1,3,2)"
+"a(1,3)"->"b(1,3,3)"
+"b(1,3,0)"[label="\N (232)" , color=black ]
+"b(1,3,0)"->"p"
+"b(1,3,1)"[label="\N (234)" , color=black ]
+"b(1,3,1)"->"p"
+"b(1,3,2)"[label="\N (236)" , color=black ]
+"b(1,3,2)"->"p"
+"b(1,3,3)"[label="\N (238)" , color=black ]
+"b(1,3,3)"->"p"
+"d(2,0)"[label="\N (240)" , color=black ]
+"d(2,0)"->"p"
+"c(1,1)"[label="\N (1070)", color=black, shape=polygon ]
+"c(1,1)"->"e1"
+"c(1,2)"[label="\N (1072)", color=black, shape=polygon ]
+"c(1,2)"->"e1"
+"c(1,3)"[label="\N (1074)", color=black, shape=polygon ]
+"c(1,3)"->"e1"
+"e2"[label="\N (1076)", color=black, shape=polygon ]
+"e2"->"d(2,0)"
+"e2"->"k2"
+"e2"->"d(2,1)"
+"e2"->"d(2,2)"
+"e2"->"d(2,3)"
+"e2"->"d(2,4)"
+"e2"->"d(2,5)"
+"e2"->"d(2,6)"
+"e2"->"d(2,7)"
+"e2"->"d(2,8)"
+"e2"->"d(2,9)"
+"e2"->"d(2,10)"
+"e2"->"d(2,11)"
+"e2"->"d(2,12)"
+"e2"->"d(2,13)"
+"e2"->"d(2,14)"
+"e2"->"d(2,15)"
+"k2"[label="\N (1304)" , color=black ]
+"k2"->"r(3,0,0)"
+"d(2,1)"[label="\N (242)" , color=black ]
+"d(2,1)"->"p"
+"d(2,2)"[label="\N (244)" , color=black ]
+"d(2,2)"->"p"
+"d(2,3)"[label="\N (246)" , color=black ]
+"d(2,3)"->"p"
+"d(2,4)"[label="\N (248)" , color=black ]
+"d(2,4)"->"p"
+"d(2,5)"[label="\N (250)" , color=black ]
+"d(2,5)"->"p"
+"d(2,6)"[label="\N (252)" , color=black ]
+"d(2,6)"->"p"
+"d(2,7)"[label="\N (254)" , color=black ]
+"d(2,7)"->"p"
+"d(2,8)"[label="\N (256)" , color=black ]
+"d(2,8)"->"p"
+"d(2,9)"[label="\N (258)" , color=black ]
+"d(2,9)"->"p"
+"d(2,10)"[label="\N (260)" , color=black ]
+"d(2,10)"->"p"
+"d(2,11)"[label="\N (262)" , color=black ]
+"d(2,11)"->"p"
+"d(2,12)"[label="\N (264)" , color=black ]
+"d(2,12)"->"p"
+"d(2,13)"[label="\N (266)" , color=black ]
+"d(2,13)"->"p"
+"d(2,14)"[label="\N (268)" , color=black ]
+"d(2,14)"->"p"
+"d(2,15)"[label="\N (270)" , color=black ]
+"d(2,15)"->"p"
+"r(3,0,0)"[label="\N (272)", color=black, shape=polygon ]
+"r(3,0,0)"->"a(3,0)"
+"r(3,0,1)"[label="\N (274)", color=black, shape=polygon ]
+"r(3,0,1)"->"a(3,0)"
+"r(3,0,2)"[label="\N (276)", color=black, shape=polygon ]
+"r(3,0,2)"->"a(3,0)"
+"r(3,0,3)"[label="\N (278)", color=black, shape=polygon ]
+"r(3,0,3)"->"a(3,0)"
+"r(3,1,0)"[label="\N (280)", color=black, shape=polygon ]
+"r(3,1,0)"->"a(3,1)"
+"r(3,1,1)"[label="\N (282)", color=black, shape=polygon ]
+"r(3,1,1)"->"a(3,1)"
+"r(3,1,2)"[label="\N (284)", color=black, shape=polygon ]
+"r(3,1,2)"->"a(3,1)"
+"r(3,1,3)"[label="\N (286)", color=black, shape=polygon ]
+"r(3,1,3)"->"a(3,1)"
+"r(3,2,0)"[label="\N (288)", color=black, shape=polygon ]
+"r(3,2,0)"->"a(3,2)"
+"r(3,2,1)"[label="\N (290)", color=black, shape=polygon ]
+"r(3,2,1)"->"a(3,2)"
+"r(3,2,2)"[label="\N (292)", color=black, shape=polygon ]
+"r(3,2,2)"->"a(3,2)"
+"r(3,2,3)"[label="\N (294)", color=black, shape=polygon ]
+"r(3,2,3)"->"a(3,2)"
+"r(3,3,0)"[label="\N (296)", color=black, shape=polygon ]
+"r(3,3,0)"->"a(3,3)"
+"r(3,3,1)"[label="\N (298)", color=black, shape=polygon ]
+"r(3,3,1)"->"a(3,3)"
+"r(3,3,2)"[label="\N (300)", color=black, shape=polygon ]
+"r(3,3,2)"->"a(3,3)"
+"r(3,3,3)"[label="\N (302)", color=black, shape=polygon ]
+"r(3,3,3)"->"a(3,3)"
+"c(2,0)"[label="\N (304)", color=black, shape=polygon ]
+"c(2,0)"->"d(3,0)"
+"c(2,1)"[label="\N (306)", color=black, shape=polygon ]
+"c(2,1)"->"d(3,0)"
+"c(2,2)"[label="\N (308)", color=black, shape=polygon ]
+"c(2,2)"->"d(3,0)"
+"c(2,3)"[label="\N (310)", color=black, shape=polygon ]
+"c(2,3)"->"d(3,0)"
+"a(2,0)"[label="\N (1078)", color=black, shape=polygon ]
+"a(2,0)"->"c(2,0)"
+"a(2,0)"->"b(2,0,0)"
+"a(2,0)"->"b(2,0,1)"
+"a(2,0)"->"b(2,0,2)"
+"a(2,0)"->"b(2,0,3)"
+"c(2,0)"[label="\N (1080)", color=black, shape=polygon ]
+"c(2,0)"->"e2"
+"b(2,0,0)"[label="\N (312)" , color=black ]
+"b(2,0,0)"->"p"
+"b(2,0,1)"[label="\N (314)" , color=black ]
+"b(2,0,1)"->"p"
+"b(2,0,2)"[label="\N (316)" , color=black ]
+"b(2,0,2)"->"p"
+"b(2,0,3)"[label="\N (318)" , color=black ]
+"b(2,0,3)"->"p"
+194[label="\N (1236)", color=black, shape=polygon ]
+194->"d(3,0)"
+195[label="\N (1238)", color=black, shape=polygon ]
+195->"d(3,0)"
+196[label="\N (1240)", color=black, shape=polygon ]
+196->"d(3,0)"
+197[label="\N (1242)", color=black, shape=polygon ]
+197->"d(3,0)"
+"a(2,1)"[label="\N (1082)", color=black, shape=polygon ]
+"a(2,1)"->"c(2,0)"
+"a(2,1)"->"b(2,1,0)"
+"a(2,1)"->"b(2,1,1)"
+"a(2,1)"->"b(2,1,2)"
+"a(2,1)"->"b(2,1,3)"
+"b(2,1,0)"[label="\N (320)" , color=black ]
+"b(2,1,0)"->"p"
+"b(2,1,1)"[label="\N (322)" , color=black ]
+"b(2,1,1)"->"p"
+"b(2,1,2)"[label="\N (324)" , color=black ]
+"b(2,1,2)"->"p"
+"b(2,1,3)"[label="\N (326)" , color=black ]
+"b(2,1,3)"->"p"
+"a(2,2)"[label="\N (1084)", color=black, shape=polygon ]
+"a(2,2)"->"c(2,0)"
+"a(2,2)"->"b(2,2,0)"
+"a(2,2)"->"b(2,2,1)"
+"a(2,2)"->"b(2,2,2)"
+"a(2,2)"->"b(2,2,3)"
+"b(2,2,0)"[label="\N (328)" , color=black ]
+"b(2,2,0)"->"p"
+"b(2,2,1)"[label="\N (330)" , color=black ]
+"b(2,2,1)"->"p"
+"b(2,2,2)"[label="\N (332)" , color=black ]
+"b(2,2,2)"->"p"
+"b(2,2,3)"[label="\N (334)" , color=black ]
+"b(2,2,3)"->"p"
+"a(2,3)"[label="\N (1086)", color=black, shape=polygon ]
+"a(2,3)"->"c(2,0)"
+"a(2,3)"->"b(2,3,0)"
+"a(2,3)"->"b(2,3,1)"
+"a(2,3)"->"b(2,3,2)"
+"a(2,3)"->"b(2,3,3)"
+"b(2,3,0)"[label="\N (336)" , color=black ]
+"b(2,3,0)"->"p"
+"b(2,3,1)"[label="\N (338)" , color=black ]
+"b(2,3,1)"->"p"
+"b(2,3,2)"[label="\N (340)" , color=black ]
+"b(2,3,2)"->"p"
+"b(2,3,3)"[label="\N (342)" , color=black ]
+"b(2,3,3)"->"p"
+"d(3,0)"[label="\N (344)" , color=black ]
+"d(3,0)"->"p"
+"c(2,1)"[label="\N (1088)", color=black, shape=polygon ]
+"c(2,1)"->"e2"
+"c(2,2)"[label="\N (1090)", color=black, shape=polygon ]
+"c(2,2)"->"e2"
+"c(2,3)"[label="\N (1092)", color=black, shape=polygon ]
+"c(2,3)"->"e2"
+"e3"[label="\N (1094)", color=black, shape=polygon ]
+"e3"->"d(3,0)"
+"e3"->"k3"
+"e3"->"d(3,1)"
+"e3"->"d(3,2)"
+"e3"->"d(3,3)"
+"e3"->"d(3,4)"
+"e3"->"d(3,5)"
+"e3"->"d(3,6)"
+"e3"->"d(3,7)"
+"e3"->"d(3,8)"
+"e3"->"d(3,9)"
+"e3"->"d(3,10)"
+"e3"->"d(3,11)"
+"e3"->"d(3,12)"
+"e3"->"d(3,13)"
+"e3"->"d(3,14)"
+"e3"->"d(3,15)"
+"k3"[label="\N (1306)" , color=black ]
+"k3"->"r(4,0,0)"
+"d(3,1)"[label="\N (346)" , color=black ]
+"d(3,1)"->"p"
+"d(3,2)"[label="\N (348)" , color=black ]
+"d(3,2)"->"p"
+"d(3,3)"[label="\N (350)" , color=black ]
+"d(3,3)"->"p"
+"d(3,4)"[label="\N (352)" , color=black ]
+"d(3,4)"->"p"
+"d(3,5)"[label="\N (354)" , color=black ]
+"d(3,5)"->"p"
+"d(3,6)"[label="\N (356)" , color=black ]
+"d(3,6)"->"p"
+"d(3,7)"[label="\N (358)" , color=black ]
+"d(3,7)"->"p"
+"d(3,8)"[label="\N (360)" , color=black ]
+"d(3,8)"->"p"
+"d(3,9)"[label="\N (362)" , color=black ]
+"d(3,9)"->"p"
+"d(3,10)"[label="\N (364)" , color=black ]
+"d(3,10)"->"p"
+"d(3,11)"[label="\N (366)" , color=black ]
+"d(3,11)"->"p"
+"d(3,12)"[label="\N (368)" , color=black ]
+"d(3,12)"->"p"
+"d(3,13)"[label="\N (370)" , color=black ]
+"d(3,13)"->"p"
+"d(3,14)"[label="\N (372)" , color=black ]
+"d(3,14)"->"p"
+"d(3,15)"[label="\N (374)" , color=black ]
+"d(3,15)"->"p"
+"r(4,0,0)"[label="\N (376)", color=black, shape=polygon ]
+"r(4,0,0)"->"a(4,0)"
+"r(4,0,1)"[label="\N (378)", color=black, shape=polygon ]
+"r(4,0,1)"->"a(4,0)"
+"r(4,0,2)"[label="\N (380)", color=black, shape=polygon ]
+"r(4,0,2)"->"a(4,0)"
+"r(4,0,3)"[label="\N (382)", color=black, shape=polygon ]
+"r(4,0,3)"->"a(4,0)"
+"r(4,1,0)"[label="\N (384)", color=black, shape=polygon ]
+"r(4,1,0)"->"a(4,1)"
+"r(4,1,1)"[label="\N (386)", color=black, shape=polygon ]
+"r(4,1,1)"->"a(4,1)"
+"r(4,1,2)"[label="\N (388)", color=black, shape=polygon ]
+"r(4,1,2)"->"a(4,1)"
+"r(4,1,3)"[label="\N (390)", color=black, shape=polygon ]
+"r(4,1,3)"->"a(4,1)"
+"r(4,2,0)"[label="\N (392)", color=black, shape=polygon ]
+"r(4,2,0)"->"a(4,2)"
+"r(4,2,1)"[label="\N (394)", color=black, shape=polygon ]
+"r(4,2,1)"->"a(4,2)"
+"r(4,2,2)"[label="\N (396)", color=black, shape=polygon ]
+"r(4,2,2)"->"a(4,2)"
+"r(4,2,3)"[label="\N (398)", color=black, shape=polygon ]
+"r(4,2,3)"->"a(4,2)"
+"r(4,3,0)"[label="\N (400)", color=black, shape=polygon ]
+"r(4,3,0)"->"a(4,3)"
+"r(4,3,1)"[label="\N (402)", color=black, shape=polygon ]
+"r(4,3,1)"->"a(4,3)"
+"r(4,3,2)"[label="\N (404)", color=black, shape=polygon ]
+"r(4,3,2)"->"a(4,3)"
+"r(4,3,3)"[label="\N (406)", color=black, shape=polygon ]
+"r(4,3,3)"->"a(4,3)"
+"c(3,0)"[label="\N (408)", color=black, shape=polygon ]
+"c(3,0)"->"d(4,0)"
+"c(3,1)"[label="\N (410)", color=black, shape=polygon ]
+"c(3,1)"->"d(4,0)"
+"c(3,2)"[label="\N (412)", color=black, shape=polygon ]
+"c(3,2)"->"d(4,0)"
+"c(3,3)"[label="\N (414)", color=black, shape=polygon ]
+"c(3,3)"->"d(4,0)"
+"a(3,0)"[label="\N (1096)", color=black, shape=polygon ]
+"a(3,0)"->"c(3,0)"
+"a(3,0)"->"b(3,0,0)"
+"a(3,0)"->"b(3,0,1)"
+"a(3,0)"->"b(3,0,2)"
+"a(3,0)"->"b(3,0,3)"
+"c(3,0)"[label="\N (1098)", color=black, shape=polygon ]
+"c(3,0)"->"e3"
+"b(3,0,0)"[label="\N (416)" , color=black ]
+"b(3,0,0)"->"p"
+"b(3,0,1)"[label="\N (418)" , color=black ]
+"b(3,0,1)"->"p"
+"b(3,0,2)"[label="\N (420)" , color=black ]
+"b(3,0,2)"->"p"
+"b(3,0,3)"[label="\N (422)" , color=black ]
+"b(3,0,3)"->"p"
+260[label="\N (1244)", color=black, shape=polygon ]
+260->"d(4,0)"
+261[label="\N (1246)", color=black, shape=polygon ]
+261->"d(4,0)"
+262[label="\N (1248)", color=black, shape=polygon ]
+262->"d(4,0)"
+263[label="\N (1250)", color=black, shape=polygon ]
+263->"d(4,0)"
+"a(3,1)"[label="\N (1100)", color=black, shape=polygon ]
+"a(3,1)"->"c(3,0)"
+"a(3,1)"->"b(3,1,0)"
+"a(3,1)"->"b(3,1,1)"
+"a(3,1)"->"b(3,1,2)"
+"a(3,1)"->"b(3,1,3)"
+"b(3,1,0)"[label="\N (424)" , color=black ]
+"b(3,1,0)"->"p"
+"b(3,1,1)"[label="\N (426)" , color=black ]
+"b(3,1,1)"->"p"
+"b(3,1,2)"[label="\N (428)" , color=black ]
+"b(3,1,2)"->"p"
+"b(3,1,3)"[label="\N (430)" , color=black ]
+"b(3,1,3)"->"p"
+"a(3,2)"[label="\N (1102)", color=black, shape=polygon ]
+"a(3,2)"->"c(3,0)"
+"a(3,2)"->"b(3,2,0)"
+"a(3,2)"->"b(3,2,1)"
+"a(3,2)"->"b(3,2,2)"
+"a(3,2)"->"b(3,2,3)"
+"b(3,2,0)"[label="\N (432)" , color=black ]
+"b(3,2,0)"->"p"
+"b(3,2,1)"[label="\N (434)" , color=black ]
+"b(3,2,1)"->"p"
+"b(3,2,2)"[label="\N (436)" , color=black ]
+"b(3,2,2)"->"p"
+"b(3,2,3)"[label="\N (438)" , color=black ]
+"b(3,2,3)"->"p"
+"a(3,3)"[label="\N (1104)", color=black, shape=polygon ]
+"a(3,3)"->"c(3,0)"
+"a(3,3)"->"b(3,3,0)"
+"a(3,3)"->"b(3,3,1)"
+"a(3,3)"->"b(3,3,2)"
+"a(3,3)"->"b(3,3,3)"
+"b(3,3,0)"[label="\N (440)" , color=black ]
+"b(3,3,0)"->"p"
+"b(3,3,1)"[label="\N (442)" , color=black ]
+"b(3,3,1)"->"p"
+"b(3,3,2)"[label="\N (444)" , color=black ]
+"b(3,3,2)"->"p"
+"b(3,3,3)"[label="\N (446)" , color=black ]
+"b(3,3,3)"->"p"
+"d(4,0)"[label="\N (448)" , color=black ]
+"d(4,0)"->"p"
+"c(3,1)"[label="\N (1106)", color=black, shape=polygon ]
+"c(3,1)"->"e3"
+"c(3,2)"[label="\N (1108)", color=black, shape=polygon ]
+"c(3,2)"->"e3"
+"c(3,3)"[label="\N (1110)", color=black, shape=polygon ]
+"c(3,3)"->"e3"
+"e4"[label="\N (1112)", color=black, shape=polygon ]
+"e4"->"d(4,0)"
+"e4"->"k4"
+"e4"->"d(4,1)"
+"e4"->"d(4,2)"
+"e4"->"d(4,3)"
+"e4"->"d(4,4)"
+"e4"->"d(4,5)"
+"e4"->"d(4,6)"
+"e4"->"d(4,7)"
+"e4"->"d(4,8)"
+"e4"->"d(4,9)"
+"e4"->"d(4,10)"
+"e4"->"d(4,11)"
+"e4"->"d(4,12)"
+"e4"->"d(4,13)"
+"e4"->"d(4,14)"
+"e4"->"d(4,15)"
+"k4"[label="\N (1308)" , color=black ]
+"k4"->"r(5,0,0)"
+"d(4,1)"[label="\N (450)" , color=black ]
+"d(4,1)"->"p"
+"d(4,2)"[label="\N (452)" , color=black ]
+"d(4,2)"->"p"
+"d(4,3)"[label="\N (454)" , color=black ]
+"d(4,3)"->"p"
+"d(4,4)"[label="\N (456)" , color=black ]
+"d(4,4)"->"p"
+"d(4,5)"[label="\N (458)" , color=black ]
+"d(4,5)"->"p"
+"d(4,6)"[label="\N (460)" , color=black ]
+"d(4,6)"->"p"
+"d(4,7)"[label="\N (462)" , color=black ]
+"d(4,7)"->"p"
+"d(4,8)"[label="\N (464)" , color=black ]
+"d(4,8)"->"p"
+"d(4,9)"[label="\N (466)" , color=black ]
+"d(4,9)"->"p"
+"d(4,10)"[label="\N (468)" , color=black ]
+"d(4,10)"->"p"
+"d(4,11)"[label="\N (470)" , color=black ]
+"d(4,11)"->"p"
+"d(4,12)"[label="\N (472)" , color=black ]
+"d(4,12)"->"p"
+"d(4,13)"[label="\N (474)" , color=black ]
+"d(4,13)"->"p"
+"d(4,14)"[label="\N (476)" , color=black ]
+"d(4,14)"->"p"
+"d(4,15)"[label="\N (478)" , color=black ]
+"d(4,15)"->"p"
+"r(5,0,0)"[label="\N (480)", color=black, shape=polygon ]
+"r(5,0,0)"->"a(5,0)"
+"r(5,0,1)"[label="\N (482)", color=black, shape=polygon ]
+"r(5,0,1)"->"a(5,0)"
+"r(5,0,2)"[label="\N (484)", color=black, shape=polygon ]
+"r(5,0,2)"->"a(5,0)"
+"r(5,0,3)"[label="\N (486)", color=black, shape=polygon ]
+"r(5,0,3)"->"a(5,0)"
+"r(5,1,0)"[label="\N (488)", color=black, shape=polygon ]
+"r(5,1,0)"->"a(5,1)"
+"r(5,1,1)"[label="\N (490)", color=black, shape=polygon ]
+"r(5,1,1)"->"a(5,1)"
+"r(5,1,2)"[label="\N (492)", color=black, shape=polygon ]
+"r(5,1,2)"->"a(5,1)"
+"r(5,1,3)"[label="\N (494)", color=black, shape=polygon ]
+"r(5,1,3)"->"a(5,1)"
+"r(5,2,0)"[label="\N (496)", color=black, shape=polygon ]
+"r(5,2,0)"->"a(5,2)"
+"r(5,2,1)"[label="\N (498)", color=black, shape=polygon ]
+"r(5,2,1)"->"a(5,2)"
+"r(5,2,2)"[label="\N (500)", color=black, shape=polygon ]
+"r(5,2,2)"->"a(5,2)"
+"r(5,2,3)"[label="\N (502)", color=black, shape=polygon ]
+"r(5,2,3)"->"a(5,2)"
+"r(5,3,0)"[label="\N (504)", color=black, shape=polygon ]
+"r(5,3,0)"->"a(5,3)"
+"r(5,3,1)"[label="\N (506)", color=black, shape=polygon ]
+"r(5,3,1)"->"a(5,3)"
+"r(5,3,2)"[label="\N (508)", color=black, shape=polygon ]
+"r(5,3,2)"->"a(5,3)"
+"r(5,3,3)"[label="\N (510)", color=black, shape=polygon ]
+"r(5,3,3)"->"a(5,3)"
+"c(4,0)"[label="\N (512)", color=black, shape=polygon ]
+"c(4,0)"->"d(5,0)"
+"c(4,1)"[label="\N (514)", color=black, shape=polygon ]
+"c(4,1)"->"d(5,0)"
+"c(4,2)"[label="\N (516)", color=black, shape=polygon ]
+"c(4,2)"->"d(5,0)"
+"c(4,3)"[label="\N (518)", color=black, shape=polygon ]
+"c(4,3)"->"d(5,0)"
+"a(4,0)"[label="\N (1114)", color=black, shape=polygon ]
+"a(4,0)"->"c(4,0)"
+"a(4,0)"->"b(4,0,0)"
+"a(4,0)"->"b(4,0,1)"
+"a(4,0)"->"b(4,0,2)"
+"a(4,0)"->"b(4,0,3)"
+"c(4,0)"[label="\N (1116)", color=black, shape=polygon ]
+"c(4,0)"->"e4"
+"b(4,0,0)"[label="\N (520)" , color=black ]
+"b(4,0,0)"->"p"
+"b(4,0,1)"[label="\N (522)" , color=black ]
+"b(4,0,1)"->"p"
+"b(4,0,2)"[label="\N (524)" , color=black ]
+"b(4,0,2)"->"p"
+"b(4,0,3)"[label="\N (526)" , color=black ]
+"b(4,0,3)"->"p"
+326[label="\N (1252)", color=black, shape=polygon ]
+326->"d(5,0)"
+327[label="\N (1254)", color=black, shape=polygon ]
+327->"d(5,0)"
+328[label="\N (1256)", color=black, shape=polygon ]
+328->"d(5,0)"
+329[label="\N (1258)", color=black, shape=polygon ]
+329->"d(5,0)"
+"a(4,1)"[label="\N (1118)", color=black, shape=polygon ]
+"a(4,1)"->"c(4,0)"
+"a(4,1)"->"b(4,1,0)"
+"a(4,1)"->"b(4,1,1)"
+"a(4,1)"->"b(4,1,2)"
+"a(4,1)"->"b(4,1,3)"
+"b(4,1,0)"[label="\N (528)" , color=black ]
+"b(4,1,0)"->"p"
+"b(4,1,1)"[label="\N (530)" , color=black ]
+"b(4,1,1)"->"p"
+"b(4,1,2)"[label="\N (532)" , color=black ]
+"b(4,1,2)"->"p"
+"b(4,1,3)"[label="\N (534)" , color=black ]
+"b(4,1,3)"->"p"
+"a(4,2)"[label="\N (1120)", color=black, shape=polygon ]
+"a(4,2)"->"c(4,0)"
+"a(4,2)"->"b(4,2,0)"
+"a(4,2)"->"b(4,2,1)"
+"a(4,2)"->"b(4,2,2)"
+"a(4,2)"->"b(4,2,3)"
+"b(4,2,0)"[label="\N (536)" , color=black ]
+"b(4,2,0)"->"p"
+"b(4,2,1)"[label="\N (538)" , color=black ]
+"b(4,2,1)"->"p"
+"b(4,2,2)"[label="\N (540)" , color=black ]
+"b(4,2,2)"->"p"
+"b(4,2,3)"[label="\N (542)" , color=black ]
+"b(4,2,3)"->"p"
+"a(4,3)"[label="\N (1122)", color=black, shape=polygon ]
+"a(4,3)"->"c(4,0)"
+"a(4,3)"->"b(4,3,0)"
+"a(4,3)"->"b(4,3,1)"
+"a(4,3)"->"b(4,3,2)"
+"a(4,3)"->"b(4,3,3)"
+"b(4,3,0)"[label="\N (544)" , color=black ]
+"b(4,3,0)"->"p"
+"b(4,3,1)"[label="\N (546)" , color=black ]
+"b(4,3,1)"->"p"
+"b(4,3,2)"[label="\N (548)" , color=black ]
+"b(4,3,2)"->"p"
+"b(4,3,3)"[label="\N (550)" , color=black ]
+"b(4,3,3)"->"p"
+"d(5,0)"[label="\N (552)" , color=black ]
+"d(5,0)"->"p"
+"c(4,1)"[label="\N (1124)", color=black, shape=polygon ]
+"c(4,1)"->"e4"
+"c(4,2)"[label="\N (1126)", color=black, shape=polygon ]
+"c(4,2)"->"e4"
+"c(4,3)"[label="\N (1128)", color=black, shape=polygon ]
+"c(4,3)"->"e4"
+"e5"[label="\N (1130)", color=black, shape=polygon ]
+"e5"->"d(5,0)"
+"e5"->"k5"
+"e5"->"d(5,1)"
+"e5"->"d(5,2)"
+"e5"->"d(5,3)"
+"e5"->"d(5,4)"
+"e5"->"d(5,5)"
+"e5"->"d(5,6)"
+"e5"->"d(5,7)"
+"e5"->"d(5,8)"
+"e5"->"d(5,9)"
+"e5"->"d(5,10)"
+"e5"->"d(5,11)"
+"e5"->"d(5,12)"
+"e5"->"d(5,13)"
+"e5"->"d(5,14)"
+"e5"->"d(5,15)"
+"k5"[label="\N (1310)" , color=black ]
+"k5"->"r(6,0,0)"
+"d(5,1)"[label="\N (554)" , color=black ]
+"d(5,1)"->"p"
+"d(5,2)"[label="\N (556)" , color=black ]
+"d(5,2)"->"p"
+"d(5,3)"[label="\N (558)" , color=black ]
+"d(5,3)"->"p"
+"d(5,4)"[label="\N (560)" , color=black ]
+"d(5,4)"->"p"
+"d(5,5)"[label="\N (562)" , color=black ]
+"d(5,5)"->"p"
+"d(5,6)"[label="\N (564)" , color=black ]
+"d(5,6)"->"p"
+"d(5,7)"[label="\N (566)" , color=black ]
+"d(5,7)"->"p"
+"d(5,8)"[label="\N (568)" , color=black ]
+"d(5,8)"->"p"
+"d(5,9)"[label="\N (570)" , color=black ]
+"d(5,9)"->"p"
+"d(5,10)"[label="\N (572)" , color=black ]
+"d(5,10)"->"p"
+"d(5,11)"[label="\N (574)" , color=black ]
+"d(5,11)"->"p"
+"d(5,12)"[label="\N (576)" , color=black ]
+"d(5,12)"->"p"
+"d(5,13)"[label="\N (578)" , color=black ]
+"d(5,13)"->"p"
+"d(5,14)"[label="\N (580)" , color=black ]
+"d(5,14)"->"p"
+"d(5,15)"[label="\N (582)" , color=black ]
+"d(5,15)"->"p"
+"r(6,0,0)"[label="\N (584)", color=black, shape=polygon ]
+"r(6,0,0)"->"a(6,0)"
+"r(6,0,1)"[label="\N (586)", color=black, shape=polygon ]
+"r(6,0,1)"->"a(6,0)"
+"r(6,0,2)"[label="\N (588)", color=black, shape=polygon ]
+"r(6,0,2)"->"a(6,0)"
+"r(6,0,3)"[label="\N (590)", color=black, shape=polygon ]
+"r(6,0,3)"->"a(6,0)"
+"r(6,1,0)"[label="\N (592)", color=black, shape=polygon ]
+"r(6,1,0)"->"a(6,1)"
+"r(6,1,1)"[label="\N (594)", color=black, shape=polygon ]
+"r(6,1,1)"->"a(6,1)"
+"r(6,1,2)"[label="\N (596)", color=black, shape=polygon ]
+"r(6,1,2)"->"a(6,1)"
+"r(6,1,3)"[label="\N (598)", color=black, shape=polygon ]
+"r(6,1,3)"->"a(6,1)"
+"r(6,2,0)"[label="\N (600)", color=black, shape=polygon ]
+"r(6,2,0)"->"a(6,2)"
+"r(6,2,1)"[label="\N (602)", color=black, shape=polygon ]
+"r(6,2,1)"->"a(6,2)"
+"r(6,2,2)"[label="\N (604)", color=black, shape=polygon ]
+"r(6,2,2)"->"a(6,2)"
+"r(6,2,3)"[label="\N (606)", color=black, shape=polygon ]
+"r(6,2,3)"->"a(6,2)"
+"r(6,3,0)"[label="\N (608)", color=black, shape=polygon ]
+"r(6,3,0)"->"a(6,3)"
+"r(6,3,1)"[label="\N (610)", color=black, shape=polygon ]
+"r(6,3,1)"->"a(6,3)"
+"r(6,3,2)"[label="\N (612)", color=black, shape=polygon ]
+"r(6,3,2)"->"a(6,3)"
+"r(6,3,3)"[label="\N (614)", color=black, shape=polygon ]
+"r(6,3,3)"->"a(6,3)"
+"c(5,0)"[label="\N (616)", color=black, shape=polygon ]
+"c(5,0)"->"d(6,0)"
+"c(5,1)"[label="\N (618)", color=black, shape=polygon ]
+"c(5,1)"->"d(6,0)"
+"c(5,2)"[label="\N (620)", color=black, shape=polygon ]
+"c(5,2)"->"d(6,0)"
+"c(5,3)"[label="\N (622)", color=black, shape=polygon ]
+"c(5,3)"->"d(6,0)"
+"a(5,0)"[label="\N (1132)", color=black, shape=polygon ]
+"a(5,0)"->"c(5,0)"
+"a(5,0)"->"b(5,0,0)"
+"a(5,0)"->"b(5,0,1)"
+"a(5,0)"->"b(5,0,2)"
+"a(5,0)"->"b(5,0,3)"
+"c(5,0)"[label="\N (1134)", color=black, shape=polygon ]
+"c(5,0)"->"e5"
+"b(5,0,0)"[label="\N (624)" , color=black ]
+"b(5,0,0)"->"p"
+"b(5,0,1)"[label="\N (626)" , color=black ]
+"b(5,0,1)"->"p"
+"b(5,0,2)"[label="\N (628)" , color=black ]
+"b(5,0,2)"->"p"
+"b(5,0,3)"[label="\N (630)" , color=black ]
+"b(5,0,3)"->"p"
+392[label="\N (1260)", color=black, shape=polygon ]
+392->"d(6,0)"
+393[label="\N (1262)", color=black, shape=polygon ]
+393->"d(6,0)"
+394[label="\N (1264)", color=black, shape=polygon ]
+394->"d(6,0)"
+395[label="\N (1266)", color=black, shape=polygon ]
+395->"d(6,0)"
+"a(5,1)"[label="\N (1136)", color=black, shape=polygon ]
+"a(5,1)"->"c(5,0)"
+"a(5,1)"->"b(5,1,0)"
+"a(5,1)"->"b(5,1,1)"
+"a(5,1)"->"b(5,1,2)"
+"a(5,1)"->"b(5,1,3)"
+"b(5,1,0)"[label="\N (632)" , color=black ]
+"b(5,1,0)"->"p"
+"b(5,1,1)"[label="\N (634)" , color=black ]
+"b(5,1,1)"->"p"
+"b(5,1,2)"[label="\N (636)" , color=black ]
+"b(5,1,2)"->"p"
+"b(5,1,3)"[label="\N (638)" , color=black ]
+"b(5,1,3)"->"p"
+"a(5,2)"[label="\N (1138)", color=black, shape=polygon ]
+"a(5,2)"->"c(5,0)"
+"a(5,2)"->"b(5,2,0)"
+"a(5,2)"->"b(5,2,1)"
+"a(5,2)"->"b(5,2,2)"
+"a(5,2)"->"b(5,2,3)"
+"b(5,2,0)"[label="\N (640)" , color=black ]
+"b(5,2,0)"->"p"
+"b(5,2,1)"[label="\N (642)" , color=black ]
+"b(5,2,1)"->"p"
+"b(5,2,2)"[label="\N (644)" , color=black ]
+"b(5,2,2)"->"p"
+"b(5,2,3)"[label="\N (646)" , color=black ]
+"b(5,2,3)"->"p"
+"a(5,3)"[label="\N (1140)", color=black, shape=polygon ]
+"a(5,3)"->"c(5,0)"
+"a(5,3)"->"b(5,3,0)"
+"a(5,3)"->"b(5,3,1)"
+"a(5,3)"->"b(5,3,2)"
+"a(5,3)"->"b(5,3,3)"
+"b(5,3,0)"[label="\N (648)" , color=black ]
+"b(5,3,0)"->"p"
+"b(5,3,1)"[label="\N (650)" , color=black ]
+"b(5,3,1)"->"p"
+"b(5,3,2)"[label="\N (652)" , color=black ]
+"b(5,3,2)"->"p"
+"b(5,3,3)"[label="\N (654)" , color=black ]
+"b(5,3,3)"->"p"
+"d(6,0)"[label="\N (656)" , color=black ]
+"d(6,0)"->"p"
+"c(5,1)"[label="\N (1142)", color=black, shape=polygon ]
+"c(5,1)"->"e5"
+"c(5,2)"[label="\N (1144)", color=black, shape=polygon ]
+"c(5,2)"->"e5"
+"c(5,3)"[label="\N (1146)", color=black, shape=polygon ]
+"c(5,3)"->"e5"
+"e6"[label="\N (1148)", color=black, shape=polygon ]
+"e6"->"d(6,0)"
+"e6"->"k6"
+"e6"->"d(6,1)"
+"e6"->"d(6,2)"
+"e6"->"d(6,3)"
+"e6"->"d(6,4)"
+"e6"->"d(6,5)"
+"e6"->"d(6,6)"
+"e6"->"d(6,7)"
+"e6"->"d(6,8)"
+"e6"->"d(6,9)"
+"e6"->"d(6,10)"
+"e6"->"d(6,11)"
+"e6"->"d(6,12)"
+"e6"->"d(6,13)"
+"e6"->"d(6,14)"
+"e6"->"d(6,15)"
+"k6"[label="\N (1312)" , color=black ]
+"k6"->"r(7,0,0)"
+"d(6,1)"[label="\N (658)" , color=black ]
+"d(6,1)"->"p"
+"d(6,2)"[label="\N (660)" , color=black ]
+"d(6,2)"->"p"
+"d(6,3)"[label="\N (662)" , color=black ]
+"d(6,3)"->"p"
+"d(6,4)"[label="\N (664)" , color=black ]
+"d(6,4)"->"p"
+"d(6,5)"[label="\N (666)" , color=black ]
+"d(6,5)"->"p"
+"d(6,6)"[label="\N (668)" , color=black ]
+"d(6,6)"->"p"
+"d(6,7)"[label="\N (670)" , color=black ]
+"d(6,7)"->"p"
+"d(6,8)"[label="\N (672)" , color=black ]
+"d(6,8)"->"p"
+"d(6,9)"[label="\N (674)" , color=black ]
+"d(6,9)"->"p"
+"d(6,10)"[label="\N (676)" , color=black ]
+"d(6,10)"->"p"
+"d(6,11)"[label="\N (678)" , color=black ]
+"d(6,11)"->"p"
+"d(6,12)"[label="\N (680)" , color=black ]
+"d(6,12)"->"p"
+"d(6,13)"[label="\N (682)" , color=black ]
+"d(6,13)"->"p"
+"d(6,14)"[label="\N (684)" , color=black ]
+"d(6,14)"->"p"
+"d(6,15)"[label="\N (686)" , color=black ]
+"d(6,15)"->"p"
+"r(7,0,0)"[label="\N (688)", color=black, shape=polygon ]
+"r(7,0,0)"->"a(7,0)"
+"r(7,0,1)"[label="\N (690)", color=black, shape=polygon ]
+"r(7,0,1)"->"a(7,0)"
+"r(7,0,2)"[label="\N (692)", color=black, shape=polygon ]
+"r(7,0,2)"->"a(7,0)"
+"r(7,0,3)"[label="\N (694)", color=black, shape=polygon ]
+"r(7,0,3)"->"a(7,0)"
+"r(7,1,0)"[label="\N (696)", color=black, shape=polygon ]
+"r(7,1,0)"->"a(7,1)"
+"r(7,1,1)"[label="\N (698)", color=black, shape=polygon ]
+"r(7,1,1)"->"a(7,1)"
+"r(7,1,2)"[label="\N (700)", color=black, shape=polygon ]
+"r(7,1,2)"->"a(7,1)"
+"r(7,1,3)"[label="\N (702)", color=black, shape=polygon ]
+"r(7,1,3)"->"a(7,1)"
+"r(7,2,0)"[label="\N (704)", color=black, shape=polygon ]
+"r(7,2,0)"->"a(7,2)"
+"r(7,2,1)"[label="\N (706)", color=black, shape=polygon ]
+"r(7,2,1)"->"a(7,2)"
+"r(7,2,2)"[label="\N (708)", color=black, shape=polygon ]
+"r(7,2,2)"->"a(7,2)"
+"r(7,2,3)"[label="\N (710)", color=black, shape=polygon ]
+"r(7,2,3)"->"a(7,2)"
+"r(7,3,0)"[label="\N (712)", color=black, shape=polygon ]
+"r(7,3,0)"->"a(7,3)"
+"r(7,3,1)"[label="\N (714)", color=black, shape=polygon ]
+"r(7,3,1)"->"a(7,3)"
+"r(7,3,2)"[label="\N (716)", color=black, shape=polygon ]
+"r(7,3,2)"->"a(7,3)"
+"r(7,3,3)"[label="\N (718)", color=black, shape=polygon ]
+"r(7,3,3)"->"a(7,3)"
+"c(6,0)"[label="\N (720)", color=black, shape=polygon ]
+"c(6,0)"->"d(7,0)"
+"c(6,1)"[label="\N (722)", color=black, shape=polygon ]
+"c(6,1)"->"d(7,0)"
+"c(6,2)"[label="\N (724)", color=black, shape=polygon ]
+"c(6,2)"->"d(7,0)"
+"c(6,3)"[label="\N (726)", color=black, shape=polygon ]
+"c(6,3)"->"d(7,0)"
+"a(6,0)"[label="\N (1150)", color=black, shape=polygon ]
+"a(6,0)"->"c(6,0)"
+"a(6,0)"->"b(6,0,0)"
+"a(6,0)"->"b(6,0,1)"
+"a(6,0)"->"b(6,0,2)"
+"a(6,0)"->"b(6,0,3)"
+"c(6,0)"[label="\N (1152)", color=black, shape=polygon ]
+"c(6,0)"->"e6"
+"b(6,0,0)"[label="\N (728)" , color=black ]
+"b(6,0,0)"->"p"
+"b(6,0,1)"[label="\N (730)" , color=black ]
+"b(6,0,1)"->"p"
+"b(6,0,2)"[label="\N (732)" , color=black ]
+"b(6,0,2)"->"p"
+"b(6,0,3)"[label="\N (734)" , color=black ]
+"b(6,0,3)"->"p"
+458[label="\N (1268)", color=black, shape=polygon ]
+458->"d(7,0)"
+459[label="\N (1270)", color=black, shape=polygon ]
+459->"d(7,0)"
+460[label="\N (1272)", color=black, shape=polygon ]
+460->"d(7,0)"
+461[label="\N (1274)", color=black, shape=polygon ]
+461->"d(7,0)"
+"a(6,1)"[label="\N (1154)", color=black, shape=polygon ]
+"a(6,1)"->"c(6,0)"
+"a(6,1)"->"b(6,1,0)"
+"a(6,1)"->"b(6,1,1)"
+"a(6,1)"->"b(6,1,2)"
+"a(6,1)"->"b(6,1,3)"
+"b(6,1,0)"[label="\N (736)" , color=black ]
+"b(6,1,0)"->"p"
+"b(6,1,1)"[label="\N (738)" , color=black ]
+"b(6,1,1)"->"p"
+"b(6,1,2)"[label="\N (740)" , color=black ]
+"b(6,1,2)"->"p"
+"b(6,1,3)"[label="\N (742)" , color=black ]
+"b(6,1,3)"->"p"
+"a(6,2)"[label="\N (1156)", color=black, shape=polygon ]
+"a(6,2)"->"c(6,0)"
+"a(6,2)"->"b(6,2,0)"
+"a(6,2)"->"b(6,2,1)"
+"a(6,2)"->"b(6,2,2)"
+"a(6,2)"->"b(6,2,3)"
+"b(6,2,0)"[label="\N (744)" , color=black ]
+"b(6,2,0)"->"p"
+"b(6,2,1)"[label="\N (746)" , color=black ]
+"b(6,2,1)"->"p"
+"b(6,2,2)"[label="\N (748)" , color=black ]
+"b(6,2,2)"->"p"
+"b(6,2,3)"[label="\N (750)" , color=black ]
+"b(6,2,3)"->"p"
+"a(6,3)"[label="\N (1158)", color=black, shape=polygon ]
+"a(6,3)"->"c(6,0)"
+"a(6,3)"->"b(6,3,0)"
+"a(6,3)"->"b(6,3,1)"
+"a(6,3)"->"b(6,3,2)"
+"a(6,3)"->"b(6,3,3)"
+"b(6,3,0)"[label="\N (752)" , color=black ]
+"b(6,3,0)"->"p"
+"b(6,3,1)"[label="\N (754)" , color=black ]
+"b(6,3,1)"->"p"
+"b(6,3,2)"[label="\N (756)" , color=black ]
+"b(6,3,2)"->"p"
+"b(6,3,3)"[label="\N (758)" , color=black ]
+"b(6,3,3)"->"p"
+"d(7,0)"[label="\N (760)" , color=black ]
+"d(7,0)"->"p"
+"c(6,1)"[label="\N (1160)", color=black, shape=polygon ]
+"c(6,1)"->"e6"
+"c(6,2)"[label="\N (1162)", color=black, shape=polygon ]
+"c(6,2)"->"e6"
+"c(6,3)"[label="\N (1164)", color=black, shape=polygon ]
+"c(6,3)"->"e6"
+"e7"[label="\N (1166)", color=black, shape=polygon ]
+"e7"->"d(7,0)"
+"e7"->"k7"
+"e7"->"d(7,1)"
+"e7"->"d(7,2)"
+"e7"->"d(7,3)"
+"e7"->"d(7,4)"
+"e7"->"d(7,5)"
+"e7"->"d(7,6)"
+"e7"->"d(7,7)"
+"e7"->"d(7,8)"
+"e7"->"d(7,9)"
+"e7"->"d(7,10)"
+"e7"->"d(7,11)"
+"e7"->"d(7,12)"
+"e7"->"d(7,13)"
+"e7"->"d(7,14)"
+"e7"->"d(7,15)"
+"k7"[label="\N (1314)" , color=black ]
+"k7"->"r(8,0,0)"
+"d(7,1)"[label="\N (762)" , color=black ]
+"d(7,1)"->"p"
+"d(7,2)"[label="\N (764)" , color=black ]
+"d(7,2)"->"p"
+"d(7,3)"[label="\N (766)" , color=black ]
+"d(7,3)"->"p"
+"d(7,4)"[label="\N (768)" , color=black ]
+"d(7,4)"->"p"
+"d(7,5)"[label="\N (770)" , color=black ]
+"d(7,5)"->"p"
+"d(7,6)"[label="\N (772)" , color=black ]
+"d(7,6)"->"p"
+"d(7,7)"[label="\N (774)" , color=black ]
+"d(7,7)"->"p"
+"d(7,8)"[label="\N (776)" , color=black ]
+"d(7,8)"->"p"
+"d(7,9)"[label="\N (778)" , color=black ]
+"d(7,9)"->"p"
+"d(7,10)"[label="\N (780)" , color=black ]
+"d(7,10)"->"p"
+"d(7,11)"[label="\N (782)" , color=black ]
+"d(7,11)"->"p"
+"d(7,12)"[label="\N (784)" , color=black ]
+"d(7,12)"->"p"
+"d(7,13)"[label="\N (786)" , color=black ]
+"d(7,13)"->"p"
+"d(7,14)"[label="\N (788)" , color=black ]
+"d(7,14)"->"p"
+"d(7,15)"[label="\N (790)" , color=black ]
+"d(7,15)"->"p"
+"r(8,0,0)"[label="\N (792)", color=black, shape=polygon ]
+"r(8,0,0)"->"a(8,0)"
+"r(8,0,1)"[label="\N (794)", color=black, shape=polygon ]
+"r(8,0,1)"->"a(8,0)"
+"r(8,0,2)"[label="\N (796)", color=black, shape=polygon ]
+"r(8,0,2)"->"a(8,0)"
+"r(8,0,3)"[label="\N (798)", color=black, shape=polygon ]
+"r(8,0,3)"->"a(8,0)"
+"r(8,1,0)"[label="\N (800)", color=black, shape=polygon ]
+"r(8,1,0)"->"a(8,1)"
+"r(8,1,1)"[label="\N (802)", color=black, shape=polygon ]
+"r(8,1,1)"->"a(8,1)"
+"r(8,1,2)"[label="\N (804)", color=black, shape=polygon ]
+"r(8,1,2)"->"a(8,1)"
+"r(8,1,3)"[label="\N (806)", color=black, shape=polygon ]
+"r(8,1,3)"->"a(8,1)"
+"r(8,2,0)"[label="\N (808)", color=black, shape=polygon ]
+"r(8,2,0)"->"a(8,2)"
+"r(8,2,1)"[label="\N (810)", color=black, shape=polygon ]
+"r(8,2,1)"->"a(8,2)"
+"r(8,2,2)"[label="\N (812)", color=black, shape=polygon ]
+"r(8,2,2)"->"a(8,2)"
+"r(8,2,3)"[label="\N (814)", color=black, shape=polygon ]
+"r(8,2,3)"->"a(8,2)"
+"r(8,3,0)"[label="\N (816)", color=black, shape=polygon ]
+"r(8,3,0)"->"a(8,3)"
+"r(8,3,1)"[label="\N (818)", color=black, shape=polygon ]
+"r(8,3,1)"->"a(8,3)"
+"r(8,3,2)"[label="\N (820)", color=black, shape=polygon ]
+"r(8,3,2)"->"a(8,3)"
+"r(8,3,3)"[label="\N (822)", color=black, shape=polygon ]
+"r(8,3,3)"->"a(8,3)"
+"c(7,0)"[label="\N (824)", color=black, shape=polygon ]
+"c(7,0)"->"d(8,0)"
+"c(7,1)"[label="\N (826)", color=black, shape=polygon ]
+"c(7,1)"->"d(8,0)"
+"c(7,2)"[label="\N (828)", color=black, shape=polygon ]
+"c(7,2)"->"d(8,0)"
+"c(7,3)"[label="\N (830)", color=black, shape=polygon ]
+"c(7,3)"->"d(8,0)"
+"a(7,0)"[label="\N (1168)", color=black, shape=polygon ]
+"a(7,0)"->"c(7,0)"
+"a(7,0)"->"b(7,0,0)"
+"a(7,0)"->"b(7,0,1)"
+"a(7,0)"->"b(7,0,2)"
+"a(7,0)"->"b(7,0,3)"
+"c(7,0)"[label="\N (1170)", color=black, shape=polygon ]
+"c(7,0)"->"e7"
+"b(7,0,0)"[label="\N (832)" , color=black ]
+"b(7,0,0)"->"p"
+"b(7,0,1)"[label="\N (834)" , color=black ]
+"b(7,0,1)"->"p"
+"b(7,0,2)"[label="\N (836)" , color=black ]
+"b(7,0,2)"->"p"
+"b(7,0,3)"[label="\N (838)" , color=black ]
+"b(7,0,3)"->"p"
+524[label="\N (1276)", color=black, shape=polygon ]
+524->"d(8,0)"
+525[label="\N (1278)", color=black, shape=polygon ]
+525->"d(8,0)"
+526[label="\N (1280)", color=black, shape=polygon ]
+526->"d(8,0)"
+527[label="\N (1282)", color=black, shape=polygon ]
+527->"d(8,0)"
+"a(7,1)"[label="\N (1172)", color=black, shape=polygon ]
+"a(7,1)"->"c(7,0)"
+"a(7,1)"->"b(7,1,0)"
+"a(7,1)"->"b(7,1,1)"
+"a(7,1)"->"b(7,1,2)"
+"a(7,1)"->"b(7,1,3)"
+"b(7,1,0)"[label="\N (840)" , color=black ]
+"b(7,1,0)"->"p"
+"b(7,1,1)"[label="\N (842)" , color=black ]
+"b(7,1,1)"->"p"
+"b(7,1,2)"[label="\N (844)" , color=black ]
+"b(7,1,2)"->"p"
+"b(7,1,3)"[label="\N (846)" , color=black ]
+"b(7,1,3)"->"p"
+"a(7,2)"[label="\N (1174)", color=black, shape=polygon ]
+"a(7,2)"->"c(7,0)"
+"a(7,2)"->"b(7,2,0)"
+"a(7,2)"->"b(7,2,1)"
+"a(7,2)"->"b(7,2,2)"
+"a(7,2)"->"b(7,2,3)"
+"b(7,2,0)"[label="\N (848)" , color=black ]
+"b(7,2,0)"->"p"
+"b(7,2,1)"[label="\N (850)" , color=black ]
+"b(7,2,1)"->"p"
+"b(7,2,2)"[label="\N (852)" , color=black ]
+"b(7,2,2)"->"p"
+"b(7,2,3)"[label="\N (854)" , color=black ]
+"b(7,2,3)"->"p"
+"a(7,3)"[label="\N (1176)", color=black, shape=polygon ]
+"a(7,3)"->"c(7,0)"
+"a(7,3)"->"b(7,3,0)"
+"a(7,3)"->"b(7,3,1)"
+"a(7,3)"->"b(7,3,2)"
+"a(7,3)"->"b(7,3,3)"
+"b(7,3,0)"[label="\N (856)" , color=black ]
+"b(7,3,0)"->"p"
+"b(7,3,1)"[label="\N (858)" , color=black ]
+"b(7,3,1)"->"p"
+"b(7,3,2)"[label="\N (860)" , color=black ]
+"b(7,3,2)"->"p"
+"b(7,3,3)"[label="\N (862)" , color=black ]
+"b(7,3,3)"->"p"
+"d(8,0)"[label="\N (864)" , color=black ]
+"d(8,0)"->"p"
+"c(7,1)"[label="\N (1178)", color=black, shape=polygon ]
+"c(7,1)"->"e7"
+"c(7,2)"[label="\N (1180)", color=black, shape=polygon ]
+"c(7,2)"->"e7"
+"c(7,3)"[label="\N (1182)", color=black, shape=polygon ]
+"c(7,3)"->"e7"
+"e8"[label="\N (1184)", color=black, shape=polygon ]
+"e8"->"d(8,0)"
+"e8"->"k8"
+"e8"->"d(8,1)"
+"e8"->"d(8,2)"
+"e8"->"d(8,3)"
+"e8"->"d(8,4)"
+"e8"->"d(8,5)"
+"e8"->"d(8,6)"
+"e8"->"d(8,7)"
+"e8"->"d(8,8)"
+"e8"->"d(8,9)"
+"e8"->"d(8,10)"
+"e8"->"d(8,11)"
+"e8"->"d(8,12)"
+"e8"->"d(8,13)"
+"e8"->"d(8,14)"
+"e8"->"d(8,15)"
+"k8"[label="\N (1316)" , color=black ]
+"k8"->"r(9,0,0)"
+"d(8,1)"[label="\N (866)" , color=black ]
+"d(8,1)"->"p"
+"d(8,2)"[label="\N (868)" , color=black ]
+"d(8,2)"->"p"
+"d(8,3)"[label="\N (870)" , color=black ]
+"d(8,3)"->"p"
+"d(8,4)"[label="\N (872)" , color=black ]
+"d(8,4)"->"p"
+"d(8,5)"[label="\N (874)" , color=black ]
+"d(8,5)"->"p"
+"d(8,6)"[label="\N (876)" , color=black ]
+"d(8,6)"->"p"
+"d(8,7)"[label="\N (878)" , color=black ]
+"d(8,7)"->"p"
+"d(8,8)"[label="\N (880)" , color=black ]
+"d(8,8)"->"p"
+"d(8,9)"[label="\N (882)" , color=black ]
+"d(8,9)"->"p"
+"d(8,10)"[label="\N (884)" , color=black ]
+"d(8,10)"->"p"
+"d(8,11)"[label="\N (886)" , color=black ]
+"d(8,11)"->"p"
+"d(8,12)"[label="\N (888)" , color=black ]
+"d(8,12)"->"p"
+"d(8,13)"[label="\N (890)" , color=black ]
+"d(8,13)"->"p"
+"d(8,14)"[label="\N (892)" , color=black ]
+"d(8,14)"->"p"
+"d(8,15)"[label="\N (894)" , color=black ]
+"d(8,15)"->"p"
+"r(9,0,0)"[label="\N (896)", color=black, shape=polygon ]
+"r(9,0,0)"->"a(9,0)"
+"r(9,0,1)"[label="\N (898)", color=black, shape=polygon ]
+"r(9,0,1)"->"a(9,0)"
+"r(9,0,2)"[label="\N (900)", color=black, shape=polygon ]
+"r(9,0,2)"->"a(9,0)"
+"r(9,0,3)"[label="\N (902)", color=black, shape=polygon ]
+"r(9,0,3)"->"a(9,0)"
+"r(9,1,0)"[label="\N (904)", color=black, shape=polygon ]
+"r(9,1,0)"->"a(9,1)"
+"r(9,1,1)"[label="\N (906)", color=black, shape=polygon ]
+"r(9,1,1)"->"a(9,1)"
+"r(9,1,2)"[label="\N (908)", color=black, shape=polygon ]
+"r(9,1,2)"->"a(9,1)"
+"r(9,1,3)"[label="\N (910)", color=black, shape=polygon ]
+"r(9,1,3)"->"a(9,1)"
+"r(9,2,0)"[label="\N (912)", color=black, shape=polygon ]
+"r(9,2,0)"->"a(9,2)"
+"r(9,2,1)"[label="\N (914)", color=black, shape=polygon ]
+"r(9,2,1)"->"a(9,2)"
+"r(9,2,2)"[label="\N (916)", color=black, shape=polygon ]
+"r(9,2,2)"->"a(9,2)"
+"r(9,2,3)"[label="\N (918)", color=black, shape=polygon ]
+"r(9,2,3)"->"a(9,2)"
+"r(9,3,0)"[label="\N (920)", color=black, shape=polygon ]
+"r(9,3,0)"->"a(9,3)"
+"r(9,3,1)"[label="\N (922)", color=black, shape=polygon ]
+"r(9,3,1)"->"a(9,3)"
+"r(9,3,2)"[label="\N (924)", color=black, shape=polygon ]
+"r(9,3,2)"->"a(9,3)"
+"r(9,3,3)"[label="\N (926)", color=black, shape=polygon ]
+"r(9,3,3)"->"a(9,3)"
+"c(8,0)"[label="\N (928)", color=black, shape=polygon ]
+"c(8,0)"->"d(9,0)"
+"c(8,1)"[label="\N (930)", color=black, shape=polygon ]
+"c(8,1)"->"d(9,0)"
+"c(8,2)"[label="\N (932)", color=black, shape=polygon ]
+"c(8,2)"->"d(9,0)"
+"c(8,3)"[label="\N (934)", color=black, shape=polygon ]
+"c(8,3)"->"d(9,0)"
+"a(8,0)"[label="\N (1186)", color=black, shape=polygon ]
+"a(8,0)"->"c(8,0)"
+"a(8,0)"->"b(8,0,0)"
+"a(8,0)"->"b(8,0,1)"
+"a(8,0)"->"b(8,0,2)"
+"a(8,0)"->"b(8,0,3)"
+"c(8,0)"[label="\N (1188)", color=black, shape=polygon ]
+"c(8,0)"->"e8"
+"b(8,0,0)"[label="\N (936)" , color=black ]
+"b(8,0,0)"->"p"
+"b(8,0,1)"[label="\N (938)" , color=black ]
+"b(8,0,1)"->"p"
+"b(8,0,2)"[label="\N (940)" , color=black ]
+"b(8,0,2)"->"p"
+"b(8,0,3)"[label="\N (942)" , color=black ]
+"b(8,0,3)"->"p"
+590[label="\N (1284)", color=black, shape=polygon ]
+590->"d(9,0)"
+591[label="\N (1286)", color=black, shape=polygon ]
+591->"d(9,0)"
+592[label="\N (1288)", color=black, shape=polygon ]
+592->"d(9,0)"
+593[label="\N (1290)", color=black, shape=polygon ]
+593->"d(9,0)"
+"a(8,1)"[label="\N (1190)", color=black, shape=polygon ]
+"a(8,1)"->"c(8,0)"
+"a(8,1)"->"b(8,1,0)"
+"a(8,1)"->"b(8,1,1)"
+"a(8,1)"->"b(8,1,2)"
+"a(8,1)"->"b(8,1,3)"
+"b(8,1,0)"[label="\N (944)" , color=black ]
+"b(8,1,0)"->"p"
+"b(8,1,1)"[label="\N (946)" , color=black ]
+"b(8,1,1)"->"p"
+"b(8,1,2)"[label="\N (948)" , color=black ]
+"b(8,1,2)"->"p"
+"b(8,1,3)"[label="\N (950)" , color=black ]
+"b(8,1,3)"->"p"
+"a(8,2)"[label="\N (1192)", color=black, shape=polygon ]
+"a(8,2)"->"c(8,0)"
+"a(8,2)"->"b(8,2,0)"
+"a(8,2)"->"b(8,2,1)"
+"a(8,2)"->"b(8,2,2)"
+"a(8,2)"->"b(8,2,3)"
+"b(8,2,0)"[label="\N (952)" , color=black ]
+"b(8,2,0)"->"p"
+"b(8,2,1)"[label="\N (954)" , color=black ]
+"b(8,2,1)"->"p"
+"b(8,2,2)"[label="\N (956)" , color=black ]
+"b(8,2,2)"->"p"
+"b(8,2,3)"[label="\N (958)" , color=black ]
+"b(8,2,3)"->"p"
+"a(8,3)"[label="\N (1194)", color=black, shape=polygon ]
+"a(8,3)"->"c(8,0)"
+"a(8,3)"->"b(8,3,0)"
+"a(8,3)"->"b(8,3,1)"
+"a(8,3)"->"b(8,3,2)"
+"a(8,3)"->"b(8,3,3)"
+"b(8,3,0)"[label="\N (960)" , color=black ]
+"b(8,3,0)"->"p"
+"b(8,3,1)"[label="\N (962)" , color=black ]
+"b(8,3,1)"->"p"
+"b(8,3,2)"[label="\N (964)" , color=black ]
+"b(8,3,2)"->"p"
+"b(8,3,3)"[label="\N (966)" , color=black ]
+"b(8,3,3)"->"p"
+"d(9,0)"[label="\N (968)" , color=black ]
+"d(9,0)"->"p"
+"c(8,1)"[label="\N (1196)", color=black, shape=polygon ]
+"c(8,1)"->"e8"
+"c(8,2)"[label="\N (1198)", color=black, shape=polygon ]
+"c(8,2)"->"e8"
+"c(8,3)"[label="\N (1200)", color=black, shape=polygon ]
+"c(8,3)"->"e8"
+"e9"[label="\N (1202)", color=black, shape=polygon ]
+"e9"->"d(9,0)"
+"e9"->"k9"
+"e9"->"d(9,1)"
+"e9"->"d(9,2)"
+"e9"->"d(9,3)"
+"e9"->"d(9,4)"
+"e9"->"d(9,5)"
+"e9"->"d(9,6)"
+"e9"->"d(9,7)"
+"e9"->"d(9,8)"
+"e9"->"d(9,9)"
+"e9"->"d(9,10)"
+"e9"->"d(9,11)"
+"e9"->"d(9,12)"
+"e9"->"d(9,13)"
+"e9"->"d(9,14)"
+"e9"->"d(9,15)"
+"k9"[label="\N (1318)" , color=black ]
+"k9"->"p"
+"d(9,1)"[label="\N (970)" , color=black ]
+"d(9,1)"->"p"
+"d(9,2)"[label="\N (972)" , color=black ]
+"d(9,2)"->"p"
+"d(9,3)"[label="\N (974)" , color=black ]
+"d(9,3)"->"p"
+"d(9,4)"[label="\N (976)" , color=black ]
+"d(9,4)"->"p"
+"d(9,5)"[label="\N (978)" , color=black ]
+"d(9,5)"->"p"
+"d(9,6)"[label="\N (980)" , color=black ]
+"d(9,6)"->"p"
+"d(9,7)"[label="\N (982)" , color=black ]
+"d(9,7)"->"p"
+"d(9,8)"[label="\N (984)" , color=black ]
+"d(9,8)"->"p"
+"d(9,9)"[label="\N (986)" , color=black ]
+"d(9,9)"->"p"
+"d(9,10)"[label="\N (988)" , color=black ]
+"d(9,10)"->"p"
+"d(9,11)"[label="\N (990)" , color=black ]
+"d(9,11)"->"p"
+"d(9,12)"[label="\N (992)" , color=black ]
+"d(9,12)"->"p"
+"d(9,13)"[label="\N (994)" , color=black ]
+"d(9,13)"->"p"
+"d(9,14)"[label="\N (996)" , color=black ]
+"d(9,14)"->"p"
+"d(9,15)"[label="\N (998)" , color=black ]
+"d(9,15)"->"p"
+"c(9,0)"[label="\N (1000)", color=black, shape=polygon ]
+"c(9,0)"->"p"
+"c(9,1)"[label="\N (1002)", color=black, shape=polygon ]
+"c(9,1)"->"p"
+"c(9,2)"[label="\N (1004)", color=black, shape=polygon ]
+"c(9,2)"->"p"
+"c(9,3)"[label="\N (1006)", color=black, shape=polygon ]
+"c(9,3)"->"p"
+"a(9,0)"[label="\N (1204)", color=black, shape=polygon ]
+"a(9,0)"->"c(9,0)"
+"a(9,0)"->"b(9,0,0)"
+"a(9,0)"->"b(9,0,1)"
+"a(9,0)"->"b(9,0,2)"
+"a(9,0)"->"b(9,0,3)"
+"c(9,0)"[label="\N (1206)", color=black, shape=polygon ]
+"c(9,0)"->"e9"
+"b(9,0,0)"[label="\N (1008)" , color=black ]
+"b(9,0,0)"->"p"
+"b(9,0,1)"[label="\N (1010)" , color=black ]
+"b(9,0,1)"->"p"
+"b(9,0,2)"[label="\N (1012)" , color=black ]
+"b(9,0,2)"->"p"
+"b(9,0,3)"[label="\N (1014)" , color=black ]
+"b(9,0,3)"->"p"
+640[label="\N (1292)", color=black, shape=polygon ]
+640->"p"
+641[label="\N (1294)", color=black, shape=polygon ]
+641->"p"
+642[label="\N (1296)", color=black, shape=polygon ]
+642->"p"
+643[label="\N (1298)", color=black, shape=polygon ]
+643->"p"
+"a(9,1)"[label="\N (1208)", color=black, shape=polygon ]
+"a(9,1)"->"c(9,0)"
+"a(9,1)"->"b(9,1,0)"
+"a(9,1)"->"b(9,1,1)"
+"a(9,1)"->"b(9,1,2)"
+"a(9,1)"->"b(9,1,3)"
+"b(9,1,0)"[label="\N (1016)" , color=black ]
+"b(9,1,0)"->"p"
+"b(9,1,1)"[label="\N (1018)" , color=black ]
+"b(9,1,1)"->"p"
+"b(9,1,2)"[label="\N (1020)" , color=black ]
+"b(9,1,2)"->"p"
+"b(9,1,3)"[label="\N (1022)" , color=black ]
+"b(9,1,3)"->"p"
+"a(9,2)"[label="\N (1210)", color=black, shape=polygon ]
+"a(9,2)"->"c(9,0)"
+"a(9,2)"->"b(9,2,0)"
+"a(9,2)"->"b(9,2,1)"
+"a(9,2)"->"b(9,2,2)"
+"a(9,2)"->"b(9,2,3)"
+"b(9,2,0)"[label="\N (1024)" , color=black ]
+"b(9,2,0)"->"p"
+"b(9,2,1)"[label="\N (1026)" , color=black ]
+"b(9,2,1)"->"p"
+"b(9,2,2)"[label="\N (1028)" , color=black ]
+"b(9,2,2)"->"p"
+"b(9,2,3)"[label="\N (1030)" , color=black ]
+"b(9,2,3)"->"p"
+"a(9,3)"[label="\N (1212)", color=black, shape=polygon ]
+"a(9,3)"->"c(9,0)"
+"a(9,3)"->"b(9,3,0)"
+"a(9,3)"->"b(9,3,1)"
+"a(9,3)"->"b(9,3,2)"
+"a(9,3)"->"b(9,3,3)"
+"b(9,3,0)"[label="\N (1032)" , color=black ]
+"b(9,3,0)"->"p"
+"b(9,3,1)"[label="\N (1034)" , color=black ]
+"b(9,3,1)"->"p"
+"b(9,3,2)"[label="\N (1036)" , color=black ]
+"b(9,3,2)"->"p"
+"b(9,3,3)"[label="\N (1038)" , color=black ]
+"b(9,3,3)"->"p"
+"c(9,1)"[label="\N (1214)", color=black, shape=polygon ]
+"c(9,1)"->"e9"
+"c(9,2)"[label="\N (1216)", color=black, shape=polygon ]
+"c(9,2)"->"e9"
+"c(9,3)"[label="\N (1218)", color=black, shape=polygon ]
+"c(9,3)"->"e9"
+}

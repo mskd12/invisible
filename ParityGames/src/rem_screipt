@@ -1,0 +1,12 @@
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp1.pg 2>> AllResults
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp2.pg 2>> AllResults
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp3.pg 2>> AllResults
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp4.pg 2>> AllResults
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp5.pg 2>> AllResults
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp6.pg 2>> AllResults
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp7.pg 2>> AllResults
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp8.pg 2>> AllResults
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp9.pg 2>> AllResults
+./symSIM -algo ssi -i AllExamples/SwitchallBestExp10.pg 2>> AllResults
+
+

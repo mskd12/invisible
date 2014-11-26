@@ -1,0 +1,11 @@
+#!/usr/bin/gnuplot
+
+set xlabel "Symmetric Strategy Imporvement"
+set ylabel "Classic Strategy Improvement for Even Player"
+set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
+set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
+set autoscale
+set terminal postscript portrait enhanced mono dashed lw 1 'Helvetica' 14
+set style line 1 lt 3 lw 3 pt 3 linecolor rgb "red"
+set output 'friedmann.eps'
+plot 'FM.dat' using 2:6 w points title 'Friedmann traps'

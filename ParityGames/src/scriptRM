@@ -1,0 +1,3 @@
+./symSIM -algo lsie -i finalexamples/Friedmann/SA8.pg 2>> FSTTCSResults 
+./symSIM -algo lsie -i finalexamples/Friedmann/SA9.pg 2>> FSTTCSResults 
+./symSIM -algo lsie -i finalexamples/Friedmann/SA10.pg 2>> FSTTCSResults 

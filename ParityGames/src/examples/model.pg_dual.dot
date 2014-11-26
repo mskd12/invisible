@@ -1,0 +1,30 @@
+digraph G { 
+"Africa"[label="\N (6)", color=black, shape=polygon ]
+"Africa"->"Antarctica"
+"Africa"->"Asia"
+"T_Africa"[label="\N (9)" , color=black ]
+"T_Africa"->"T_Antarctica"
+"Antarctica"[label="\N (5)", color=black, shape=polygon ]
+"Antarctica"->"Africa"
+"Antarctica"->"Antarctica"
+"T_Antarctica"[label="\N (8)" , color=black ]
+"T_Antarctica"->"T_Africa"
+"America"[label="\N (14)", color=black, shape=polygon ]
+"America"->"Asia"
+"America"->"Antarctica"
+"America"->"Australia"
+"T_America"[label="\N (17)" , color=black ]
+"T_America"->"T_Asia"
+"Australia"[label="\N (10)" , color=black ]
+"Australia"->"Antarctica"
+"T_Australia"[label="\N (11)", color=black, shape=polygon ]
+"T_Australia"->"T_Antarctica"
+"T_Australia"->"T_Asia"
+"Asia"[label="\N (13)" , color=black ]
+"Asia"->"Australia"
+"T_Asia"[label="\N (16)", color=black, shape=polygon ]
+"T_Asia"->"T_Australia"
+"T_Asia"->"T_America"
+"T_Asia"->"T_Africa"
+"T_Asia"->"T_Antarctica"
+}

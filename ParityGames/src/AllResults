@@ -1,0 +1,135 @@
+AllExamples/Cunningham1.pg	2	0.010037
+AllExamples/Cunningham2.pg	6	0.08136
+AllExamples/Cunningham3.pg	9	0.242864
+AllExamples/Cunningham4.pg	12	0.554264
+AllExamples/Cunningham5.pg	15	1.04882
+AllExamples/Cunningham6.pg	18	1.82688
+AllExamples/Cunningham7.pg	21	2.9289
+AllExamples/Cunningham8.pg	24	4.49612
+AllExamples/Cunningham9.pg	27	6.33968
+AllExamples/Cunningham10.pg	30	8.84122
+AllExamples/CunninghamSubExp1.pg	1	0.008331
+AllExamples/CunninghamSubExp2.pg	1	0.02415
+AllExamples/CunninghamSubExp3.pg	1	0.058612
+AllExamples/CunninghamSubExp4.pg	1	0.113497
+AllExamples/CunninghamSubExp5.pg	1	0.209335
+AllExamples/CunninghamSubExp6.pg	1	0.360878
+AllExamples/CunninghamSubExp7.pg	1	0.585681
+AllExamples/CunninghamSubExp8.pg	1	0.912437
+AllExamples/CunninghamSubExp9.pg	1	1.35825
+AllExamples/CunninghamSubExp10.pg	1	1.94274
+AllExamples/FearnleySubExp1.pg	4	0.170988
+AllExamples/FearnleySubExp2.pg	7	1.35733
+AllExamples/FearnleySubExp3.pg	11	5.30154
+AllExamples/FearnleySubExp4.pg	13	12.2828
+AllExamples/FearnleySubExp5.pg	17	28.6395
+AllExamples/FearnleySubExp6.pg	21	62.6034
+AllExamples/FearnleySubExp7.pg	25	124.564
+AllExamples/FearnleySubExp8.pg	29	213.549
+AllExamples/FearnleySubExp9.pg	33	359.466
+AllExamples/FearnleySubExp10.pg	37	589.416
+AllExamples/FriedmannSubExp1.pg	4	0.173361
+AllExamples/FriedmannSubExp2.pg	9	1.44219
+AllExamples/FriedmannSubExp3.pg	13	6.31799
+AllExamples/FriedmannSubExp4.pg	15	16.0551
+AllExamples/FriedmannSubExp5.pg	19	40.9921
+AllExamples/FriedmannSubExp6.pg	23	88.8658
+AllExamples/FriedmannSubExp7.pg	27	175.066
+AllExamples/FriedmannSubExp8.pg	31	319.343
+AllExamples/FriedmannSubExp9.pg	35	552.539
+AllExamples/FriedmannSubExp10.pg	39	953.434
+AllExamples/RandomEdgeExpTest1.pg	1	0.1859
+AllExamples/RandomEdgeExpTest2.pg	2	3.07851
+AllExamples/RandomEdgeExpTest3.pg	2	13.7172
+AllExamples/RandomEdgeExpTest4.pg	2	44.6594
+AllExamples/RandomEdgeExpTest5.pg	2	109.114
+AllExamples/RandomEdgeExpTest6.pg	2	234.485
+AllExamples/RandomEdgeExpTest7.pg	2	444.946
+AllExamples/RandomFacetSubExp1.pg	1	0.002003
+AllExamples/RandomFacetSubExp2.pg	2	0.033233
+AllExamples/RandomFacetSubExp3.pg	7	0.517144
+AllExamples/RandomFacetSubExp4.pg	9	1.17193
+AllExamples/RandomFacetSubExp5.pg	11	4.31512
+AllExamples/RandomFacetSubExp6.pg	13	7.30216
+AllExamples/RandomFacetSubExp7.pg	15	11.6567
+AllExamples/RandomFacetSubExp8.pg	17	18.0443
+AllExamples/RandomFacetSubExp9.pg	19	49.4208
+AllExamples/RandomFacetSubExp10.pg	21	70.1028
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+ --- syntax error -- 
+libc++abi.dylib: terminating with uncaught exception of type parityGame::SymSIMExceptions
+AllExamples/SwitchallBestSubExp1.pg	5	0.259919
+AllExamples/SwitchallBestSubExp2.pg	7	2.07896
+AllExamples/SwitchallBestSubExp3.pg	9	6.85326
+AllExamples/SwitchallBestSubExp4.pg	11	15.4592
+AllExamples/SwitchallBestSubExp5.pg	13	32.4355
+AllExamples/SwitchallBestSubExp6.pg	15	57.8097
+AllExamples/SwitchallBestSubExp7.pg	17	100.47
+AllExamples/SwitchallBestSubExp8.pg	19	160.752
+AllExamples/SwitchallBestSubExp9.pg	21	246.95
+AllExamples/SwitchallSubExp1.pg	3	0.075154
+AllExamples/SwitchallSubExp2.pg	5	0.410945
+AllExamples/SwitchallSubExp3.pg	7	1.17483
+AllExamples/SwitchallSubExp4.pg	9	2.56103
+AllExamples/SwitchallSubExp5.pg	10	4.37178
+AllExamples/SwitchallSubExp6.pg	11	7.08506
+AllExamples/SwitchallSubExp7.pg	12	10.8648
+AllExamples/SwitchallSubExp8.pg	13	16.1753
+AllExamples/SwitchallSubExp9.pg	14	22.7798
+AllExamples/SwitchallSubExp10.pg	15	32.3301
+AllExamples/Switchallexp1.pg	3	0.13071
+AllExamples/Switchallexp2.pg	4	0.55728
+AllExamples/Switchallexp3.pg	6	1.56257
+AllExamples/Switchallexp4.pg	8	3.68414
+AllExamples/Switchallexp5.pg	10	6.93416
+AllExamples/Switchallexp6.pg	11	11.0962
+AllExamples/Switchallexp7.pg	12	16.6159
+AllExamples/Switchallexp8.pg	14	26.5929
+AllExamples/Switchallexp9.pg	16	40.1116
+AllExamples/Switchallexp10.pg	18	58.6035
+AllExamples/ZadehExp2.pg	6	0.195182
+AllExamples/ZadehExp3.pg	10	0.669008
+AllExamples/ZadehExp4.pg	14	1.37162
+AllExamples/ZadehExp5.pg	18	2.65161
+AllExamples/ZadehExp6.pg	21	4.14281
+AllExamples/ZadehExp7.pg	25	7.55521
+AllExamples/ZadehExp8.pg	28	9.46707
+AllExamples/ZadehExp9.pg	32	14.0248
+AllExamples/ZadehExp10.pg	35	18.0115
+AllExamples/ZadehSubExp1.pg	5	0.079615
+AllExamples/ZadehSubExp10.pg	37	27.6586
+AllExamples/ZadehSubExp2.pg	9	0.295301
+AllExamples/ZadehSubExp3.pg	13	0.824544
+AllExamples/ZadehSubExp4.pg	16	1.60612
+AllExamples/ZadehSubExp5.pg	20	3.2102
+AllExamples/ZadehSubExp6.pg	23	5.15953
+AllExamples/ZadehSubExp7.pg	27	8.89337
+AllExamples/ZadehSubExp8.pg	30	12.6209
+AllExamples/ZadehSubExp10.pg	37	28.0505
+AllExamples/SwitchallBestExp1.pg	4	0.651641
+AllExamples/SwitchallBestExp2.pg	5	3.27899
+AllExamples/SwitchallBestExp3.pg	8	9.18506
+AllExamples/SwitchallBestExp4.pg	11	23.8435
+AllExamples/SwitchallBestExp5.pg	12	41.9825
+AllExamples/SwitchallBestExp6.pg	13	65.1332
+AllExamples/SwitchallBestExp7.pg	15	108.511
+AllExamples/SwitchallBestExp8.pg	17	172.534
+AllExamples/SwitchallBestExp9.pg	18	237.012
+AllExamples/SwitchallBestExp10.pg	19	326.692

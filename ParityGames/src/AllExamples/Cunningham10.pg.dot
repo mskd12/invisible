@@ -1,0 +1,203 @@
+digraph G { 
+"a1"[label="\N (3)" , color=black ]
+"a1"->"a2"
+"a2"[label="\N (5)" , color=black ]
+"a2"->"a3"
+"a3"[label="\N (7)" , color=black ]
+"a3"->"a4"
+"a4"[label="\N (9)" , color=black ]
+"a4"->"a5"
+"a5"[label="\N (11)" , color=black ]
+"a5"->"a6"
+"a6"[label="\N (13)" , color=black ]
+"a6"->"a7"
+"a7"[label="\N (15)" , color=black ]
+"a7"->"a8"
+"a8"[label="\N (17)" , color=black ]
+"a8"->"a9"
+"a9"[label="\N (19)" , color=black ]
+"a9"->"a10"
+"b1"[label="\N (21)" , color=black ]
+"b1"->"q0"
+"b2"[label="\N (23)" , color=black ]
+"b2"->"b1"
+"b3"[label="\N (25)" , color=black ]
+"b3"->"b2"
+"b4"[label="\N (27)" , color=black ]
+"b4"->"b3"
+"b5"[label="\N (29)" , color=black ]
+"b5"->"b4"
+"b6"[label="\N (31)" , color=black ]
+"b6"->"b5"
+"b7"[label="\N (33)" , color=black ]
+"b7"->"b6"
+"b8"[label="\N (35)" , color=black ]
+"b8"->"b7"
+"b9"[label="\N (37)" , color=black ]
+"b9"->"b8"
+"c0"[label="\N (39)" , color=black ]
+"c0"->"q0"
+"c1"[label="\N (41)" , color=black ]
+"c1"->"c0"
+"c2"[label="\N (43)" , color=black ]
+"c2"->"c1"
+"c3"[label="\N (45)" , color=black ]
+"c3"->"c2"
+"c4"[label="\N (47)" , color=black ]
+"c4"->"c3"
+"c5"[label="\N (49)" , color=black ]
+"c5"->"c4"
+"c6"[label="\N (51)" , color=black ]
+"c6"->"c5"
+"c7"[label="\N (53)" , color=black ]
+"c7"->"c6"
+"c8"[label="\N (55)" , color=black ]
+"c8"->"c7"
+"c9"[label="\N (57)" , color=black ]
+"c9"->"c8"
+"d1"[label="\N (63)" , color=black ]
+"d1"->"b1"
+"d2"[label="\N (65)" , color=black ]
+"d2"->"b2"
+"d3"[label="\N (67)" , color=black ]
+"d3"->"b3"
+"d4"[label="\N (69)" , color=black ]
+"d4"->"b4"
+"d5"[label="\N (71)" , color=black ]
+"d5"->"b5"
+"d6"[label="\N (73)" , color=black ]
+"d6"->"b6"
+"d7"[label="\N (75)" , color=black ]
+"d7"->"b7"
+"d8"[label="\N (77)" , color=black ]
+"d8"->"b8"
+"d9"[label="\N (79)" , color=black ]
+"d9"->"b9"
+"e0"[label="\N (81)" , color=black ]
+"e0"->"p1"
+"e1"[label="\N (83)" , color=black ]
+"e1"->"p0"
+"e2"[label="\N (85)" , color=black ]
+"e2"->"p0"
+"e3"[label="\N (87)" , color=black ]
+"e3"->"p0"
+"e4"[label="\N (89)" , color=black ]
+"e4"->"p0"
+"e5"[label="\N (91)" , color=black ]
+"e5"->"p0"
+"e6"[label="\N (93)" , color=black ]
+"e6"->"p0"
+"e7"[label="\N (95)" , color=black ]
+"e7"->"p0"
+"e8"[label="\N (97)" , color=black ]
+"e8"->"p0"
+"e9"[label="\N (99)" , color=black ]
+"e9"->"p0"
+"t"[label="\N (1)", color=black, shape=polygon ]
+"t"->"t"
+"a10"[label="\N (59)", color=black, shape=polygon ]
+"a10"->"t"
+"p0"[label="\N (140)", color=black, shape=polygon ]
+"p0"->"c9"
+"p1"[label="\N (61)", color=black, shape=polygon ]
+"p1"->"p0"
+"y0"[label="\N (142)", color=black, shape=polygon ]
+"y0"->"a1"
+"q0"[label="\N (141)", color=black, shape=polygon ]
+"q0"->"x0"
+"x0"[label="\N (120)", color=black, shape=polygon ]
+"x0"->"e0"
+"x0"->"y0"
+"x10"[label="\N (101)", color=black, shape=polygon ]
+"x10"->"x0"
+"q1"[label="\N (143)", color=black, shape=polygon ]
+"q1"->"x1"
+"y1"[label="\N (144)", color=black, shape=polygon ]
+"y1"->"a2"
+"x1"[label="\N (122)", color=black, shape=polygon ]
+"x1"->"d1"
+"x1"->"e1"
+"x1"->"y1"
+"x11"[label="\N (103)", color=black, shape=polygon ]
+"x11"->"x1"
+"q2"[label="\N (145)", color=black, shape=polygon ]
+"q2"->"x2"
+"y2"[label="\N (146)", color=black, shape=polygon ]
+"y2"->"a3"
+"x2"[label="\N (124)", color=black, shape=polygon ]
+"x2"->"d2"
+"x2"->"e2"
+"x2"->"y2"
+"x12"[label="\N (105)", color=black, shape=polygon ]
+"x12"->"x2"
+"q3"[label="\N (147)", color=black, shape=polygon ]
+"q3"->"x3"
+"y3"[label="\N (148)", color=black, shape=polygon ]
+"y3"->"a4"
+"x3"[label="\N (126)", color=black, shape=polygon ]
+"x3"->"d3"
+"x3"->"e3"
+"x3"->"y3"
+"x13"[label="\N (107)", color=black, shape=polygon ]
+"x13"->"x3"
+"q4"[label="\N (149)", color=black, shape=polygon ]
+"q4"->"x4"
+"y4"[label="\N (150)", color=black, shape=polygon ]
+"y4"->"a5"
+"x4"[label="\N (128)", color=black, shape=polygon ]
+"x4"->"d4"
+"x4"->"e4"
+"x4"->"y4"
+"x14"[label="\N (109)", color=black, shape=polygon ]
+"x14"->"x4"
+"q5"[label="\N (151)", color=black, shape=polygon ]
+"q5"->"x5"
+"y5"[label="\N (152)", color=black, shape=polygon ]
+"y5"->"a6"
+"x5"[label="\N (130)", color=black, shape=polygon ]
+"x5"->"d5"
+"x5"->"e5"
+"x5"->"y5"
+"x15"[label="\N (111)", color=black, shape=polygon ]
+"x15"->"x5"
+"q6"[label="\N (153)", color=black, shape=polygon ]
+"q6"->"x6"
+"y6"[label="\N (154)", color=black, shape=polygon ]
+"y6"->"a7"
+"x6"[label="\N (132)", color=black, shape=polygon ]
+"x6"->"d6"
+"x6"->"e6"
+"x6"->"y6"
+"x16"[label="\N (113)", color=black, shape=polygon ]
+"x16"->"x6"
+"q7"[label="\N (155)", color=black, shape=polygon ]
+"q7"->"x7"
+"y7"[label="\N (156)", color=black, shape=polygon ]
+"y7"->"a8"
+"x7"[label="\N (134)", color=black, shape=polygon ]
+"x7"->"d7"
+"x7"->"e7"
+"x7"->"y7"
+"x17"[label="\N (115)", color=black, shape=polygon ]
+"x17"->"x7"
+"q8"[label="\N (157)", color=black, shape=polygon ]
+"q8"->"x8"
+"y8"[label="\N (158)", color=black, shape=polygon ]
+"y8"->"a9"
+"x8"[label="\N (136)", color=black, shape=polygon ]
+"x8"->"d8"
+"x8"->"e8"
+"x8"->"y8"
+"x18"[label="\N (117)", color=black, shape=polygon ]
+"x18"->"x8"
+"q9"[label="\N (159)", color=black, shape=polygon ]
+"q9"->"x9"
+"y9"[label="\N (160)", color=black, shape=polygon ]
+"y9"->"a10"
+"x9"[label="\N (138)", color=black, shape=polygon ]
+"x9"->"d9"
+"x9"->"e9"
+"x9"->"y9"
+"x19"[label="\N (119)", color=black, shape=polygon ]
+"x19"->"x9"
+}

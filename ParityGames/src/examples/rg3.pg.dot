@@ -1,0 +1,80 @@
+digraph G { 
+0[label="\N (11)" , style=filled, fillcolor=green ]
+0->5
+0->15
+1[label="\N (21)", color=black, shape=polygon ]
+1->9
+1->11
+1->15
+2[label="\N (33)", color=black, shape=polygon ]
+2->3
+2->9
+2->12
+2->16
+3[label="\N (26)" , style=filled, fillcolor=green ]
+3->0
+3->2
+3->15
+4[label="\N (18)", fillcolor=green, style=filled, shape=polygon ]
+4->8
+4->9
+4->14
+4->18
+5[label="\N (10)" , style=filled, fillcolor=green ]
+5->5
+5->14
+6[label="\N (13)" , style=filled, fillcolor=green ]
+6->0
+6->10
+6->19
+7[label="\N (1)" , style=filled, fillcolor=green ]
+7->3
+7->12
+8[label="\N (2)" , style=filled, fillcolor=green ]
+8->5
+8->13
+9[label="\N (20)" , style=filled, fillcolor=green ]
+9->13
+9->16
+10[label="\N (17)", fillcolor=green, style=filled, shape=polygon ]
+10->5
+10->11
+10->17
+10->19
+11[label="\N (28)" , style=filled, fillcolor=green ]
+11->6
+11->9
+11->17
+12[label="\N (8)" , style=filled, fillcolor=green ]
+12->5
+12->10
+12->13
+12->16
+13[label="\N (4)" , style=filled, fillcolor=green ]
+13->10
+13->18
+14[label="\N (30)" , style=filled, fillcolor=green ]
+14->3
+14->8
+14->10
+15[label="\N (23)", color=black, shape=polygon ]
+15->6
+15->9
+15->13
+15->15
+16[label="\N (9)", color=black, shape=polygon ]
+16->4
+16->8
+16->16
+16->19
+17[label="\N (16)" , style=filled, fillcolor=green ]
+17->6
+17->11
+17->15
+18[label="\N (7)", fillcolor=green, style=filled, shape=polygon ]
+18->4
+18->14
+19[label="\N (32)" , style=filled, fillcolor=green ]
+19->8
+19->17
+}

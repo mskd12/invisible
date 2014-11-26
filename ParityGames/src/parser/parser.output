@@ -1,0 +1,215 @@
+Grammar
+
+    0 $accept: graph $end
+
+    1 graph: head body
+
+    2 head: PARITY INT SEMI
+
+    3 body: vertices_list
+
+    4 vertices_list: vertex
+    5              | vertices_list vertex
+
+    6 vertex: INT INT INT succ_list IDEN SEMI
+    7       | INT INT INT succ_list SEMI
+
+    8 succ_list: INT
+    9          | succ_list COMMA INT
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256)
+INT (258) 2 6 7 8 9
+IDEN (259) 6
+PARITY (260) 2
+SEMI (261) 2 6 7
+COMMA (262) 9
+
+
+Nonterminals, with rules where they appear
+
+$accept (8)
+    on left: 0
+graph (9)
+    on left: 1, on right: 0
+head (10)
+    on left: 2, on right: 1
+body (11)
+    on left: 3, on right: 1
+vertices_list (12)
+    on left: 4 5, on right: 3 5
+vertex (13)
+    on left: 6 7, on right: 4 5
+succ_list (14)
+    on left: 8 9, on right: 6 7 9
+
+
+State 0
+
+    0 $accept: . graph $end
+
+    PARITY  shift, and go to state 1
+
+    graph  go to state 2
+    head   go to state 3
+
+
+State 1
+
+    2 head: PARITY . INT SEMI
+
+    INT  shift, and go to state 4
+
+
+State 2
+
+    0 $accept: graph . $end
+
+    $end  shift, and go to state 5
+
+
+State 3
+
+    1 graph: head . body
+
+    INT  shift, and go to state 6
+
+    body           go to state 7
+    vertices_list  go to state 8
+    vertex         go to state 9
+
+
+State 4
+
+    2 head: PARITY INT . SEMI
+
+    SEMI  shift, and go to state 10
+
+
+State 5
+
+    0 $accept: graph $end .
+
+    $default  accept
+
+
+State 6
+
+    6 vertex: INT . INT INT succ_list IDEN SEMI
+    7       | INT . INT INT succ_list SEMI
+
+    INT  shift, and go to state 11
+
+
+State 7
+
+    1 graph: head body .
+
+    $default  reduce using rule 1 (graph)
+
+
+State 8
+
+    3 body: vertices_list .
+    5 vertices_list: vertices_list . vertex
+
+    INT  shift, and go to state 6
+
+    $default  reduce using rule 3 (body)
+
+    vertex  go to state 12
+
+
+State 9
+
+    4 vertices_list: vertex .
+
+    $default  reduce using rule 4 (vertices_list)
+
+
+State 10
+
+    2 head: PARITY INT SEMI .
+
+    $default  reduce using rule 2 (head)
+
+
+State 11
+
+    6 vertex: INT INT . INT succ_list IDEN SEMI
+    7       | INT INT . INT succ_list SEMI
+
+    INT  shift, and go to state 13
+
+
+State 12
+
+    5 vertices_list: vertices_list vertex .
+
+    $default  reduce using rule 5 (vertices_list)
+
+
+State 13
+
+    6 vertex: INT INT INT . succ_list IDEN SEMI
+    7       | INT INT INT . succ_list SEMI
+
+    INT  shift, and go to state 14
+
+    succ_list  go to state 15
+
+
+State 14
+
+    8 succ_list: INT .
+
+    $default  reduce using rule 8 (succ_list)
+
+
+State 15
+
+    6 vertex: INT INT INT succ_list . IDEN SEMI
+    7       | INT INT INT succ_list . SEMI
+    9 succ_list: succ_list . COMMA INT
+
+    IDEN   shift, and go to state 16
+    SEMI   shift, and go to state 17
+    COMMA  shift, and go to state 18
+
+
+State 16
+
+    6 vertex: INT INT INT succ_list IDEN . SEMI
+
+    SEMI  shift, and go to state 19
+
+
+State 17
+
+    7 vertex: INT INT INT succ_list SEMI .
+
+    $default  reduce using rule 7 (vertex)
+
+
+State 18
+
+    9 succ_list: succ_list COMMA . INT
+
+    INT  shift, and go to state 20
+
+
+State 19
+
+    6 vertex: INT INT INT succ_list IDEN SEMI .
+
+    $default  reduce using rule 6 (vertex)
+
+
+State 20
+
+    9 succ_list: succ_list COMMA INT .
+
+    $default  reduce using rule 9 (succ_list)

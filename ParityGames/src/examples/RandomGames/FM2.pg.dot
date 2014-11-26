@@ -1,0 +1,147 @@
+digraph G { 
+"x"[label="\N (1) : <1, (),0>", color=black, shape=polygon ]
+"x"->"x"[color=red]
+"s"[label="\N (44) : <26, (44, 49, 53, ),8>", color=black]
+"s"->"z"
+"s"->"f0"
+"s"->"f1"
+"z"[label="\N (64) : <1, (64, ),1>", color=black, shape=polygon ]
+"z"->"x"[color=red]
+"f0"[label="\N (53) : <26, (49, 53, ),7>", color=black, shape=polygon ]
+"f0"->"e0"[color=red]
+"f1"[label="\N (59) : <26, (59, ),1>", color=black, shape=polygon ]
+"f1"->"e1"[color=red]
+"c"[label="\N (42) : <26, (42, 46, 49, 53, ),10>", color=black]
+"c"->"s"
+"c"->"r"
+"r"[label="\N (46) : <26, (46, 49, 53, ),9>", color=black]
+"r"->"z"
+"r"->"g0"
+"r"->"g1"
+"g0"[label="\N (24) : <26, (49, 53, ),8>", color=black]
+"g0"->"f0"
+"g0"->"k0"
+"g1"[label="\N (28) : <26, (28, 59, ),2>", color=black]
+"g1"->"f1"
+"g1"->"k1"
+"a0"[label="\N (30) : <26, (29, 30, 42, 46, 49, 53, ),12>", color=black, shape=polygon ]
+"a0"->"t0"[color=red]
+"t0"[label="\N (29) : <26, (29, 42, 46, 49, 53, ),11>", color=black]
+"t0"->"s"
+"t0"->"c"
+"t0"->"r"
+"a1"[label="\N (32) : <26, (29, 31, 32, 42, 46, 49, 53, ),13>", color=black, shape=polygon ]
+"a1"->"t1"[color=red]
+"t1"[label="\N (31) : <26, (29, 31, 42, 46, 49, 53, ),12>", color=black]
+"t1"->"s"
+"t1"->"r"
+"t1"->"t0"
+"a2"[label="\N (34) : <26, (29, 31, 33, 34, 42, 46, 49, 53, ),14>", color=black, shape=polygon ]
+"a2"->"t2"[color=red]
+"t2"[label="\N (33) : <26, (29, 31, 33, 42, 46, 49, 53, ),13>", color=black]
+"t2"->"s"
+"t2"->"r"
+"t2"->"t1"
+"a3"[label="\N (36) : <26, (29, 31, 33, 35, 36, 42, 46, 49, 53, ),15>", color=black, shape=polygon ]
+"a3"->"t3"[color=red]
+"t3"[label="\N (35) : <26, (29, 31, 33, 35, 42, 46, 49, 53, ),14>", color=black]
+"t3"->"s"
+"t3"->"r"
+"t3"->"t2"
+"a4"[label="\N (38) : <26, (29, 31, 33, 35, 37, 38, 42, 46, 49, 53, ),16>", color=black, shape=polygon ]
+"a4"->"t4"[color=red]
+"t4"[label="\N (37) : <26, (29, 31, 33, 35, 37, 42, 46, 49, 53, ),15>", color=black]
+"t4"->"s"
+"t4"->"r"
+"t4"->"t3"
+"a5"[label="\N (40) : <26, (29, 31, 33, 35, 37, 39, 40, 42, 46, 49, 53, ),17>", color=black, shape=polygon ]
+"a5"->"t5"[color=red]
+"t5"[label="\N (39) : <26, (29, 31, 33, 35, 37, 39, 42, 46, 49, 53, ),16>", color=black]
+"t5"->"s"
+"t5"->"r"
+"t5"->"t4"
+"u(0,1)"[label="\N (5) : <26, (49, ),3>", color=black]
+"u(0,1)"->"v(0,1)"
+"u(0,1)"->"w(0,1)"
+"v(0,1)"[label="\N (7) : <26, (49, ),2>", color=black, shape=polygon ]
+"v(0,1)"->"m1"[color=red]
+"v(0,1)"->"e0"
+"w(0,1)"[label="\N (2) : <26, (49, ),7>", color=black, shape=polygon ]
+"w(0,1)"->"e0"[color=red]
+"w(0,1)"->"q1"
+"m1"[label="\N (49) : <26, (49, ),1>", color=black, shape=polygon ]
+"m1"->"e1"[color=red]
+"e0"[label="\N (20) : <26, (49, ),6>", color=black, shape=polygon ]
+"e0"->"d(0,1)"[color=red]
+"e0"->"h0"
+"q1"[label="\N (61) : <1, (57, 61, 62, 64, ),4>", color=black, shape=polygon ]
+"q1"->"h1"[color=red]
+"d(0,1)"[label="\N (9) : <26, (49, ),5>", color=black]
+"d(0,1)"->"s"
+"d(0,1)"->"r"
+"d(0,1)"->"a0"
+"d(0,1)"->"a1"
+"d(0,1)"->"a2"
+"d(0,1)"->"d(0,0)"
+"d(0,0)"[label="\N (11) : <26, (49, ),4>", color=black]
+"d(0,0)"->"s"
+"d(0,0)"->"r"
+"d(0,0)"->"a0"
+"d(0,0)"->"a1"
+"d(0,0)"->"a2"
+"d(0,0)"->"u(0,1)"
+"h0"[label="\N (56) : <26, (28, 51, 56, 59, ),4>", color=black, shape=polygon ]
+"h0"->"k0"[color=red]
+"m0"[label="\N (47) : <26, (47, 49, ),7>", color=black, shape=polygon ]
+"m0"->"e0"[color=red]
+"q0"[label="\N (55) : <26, (28, 51, 55, 56, 59, ),5>", color=black, shape=polygon ]
+"q0"->"h0"[color=red]
+"k0"[label="\N (51) : <26, (28, 51, 59, ),3>", color=black]
+"k0"->"z"
+"k0"->"g1"
+"u(1,0)"[label="\N (13) : <26, (),2>", color=black]
+"u(1,0)"->"v(1,0)"
+"u(1,0)"->"w(1,0)"
+"u(1,0)"->"b(1,0)"
+"v(1,0)"[label="\N (15) : <26, (47, 49, ),8>", color=black, shape=polygon ]
+"v(1,0)"->"m0"[color=red]
+"v(1,0)"->"e1"
+"w(1,0)"[label="\N (4) : <26, (28, 51, 55, 56, 59, ),6>", color=black, shape=polygon ]
+"w(1,0)"->"q0"[color=red]
+"w(1,0)"->"e1"
+"b(1,0)"[label="\N (19) : <26, (),1>", color=black]
+"b(1,0)"->"l(1,0)"
+"b(1,0)"->"p(1,0)"
+"b(1,0)"->"e1"
+"l(1,0)"[label="\N (16) : <26, (47, 49, ),9>", color=black]
+"l(1,0)"->"v(1,0)"
+"p(1,0)"[label="\N (18) : <26, (28, 51, 55, 56, 59, ),7>", color=black]
+"p(1,0)"->"w(1,0)"
+"e1"[label="\N (26) : <26, (),0>", color=black, shape=polygon ]
+"e1"->"d(1,1)"[color=red]
+"e1"->"h1"
+"d(1,1)"[label="\N (21) : <26, (),4>", color=black]
+"d(1,1)"->"s"
+"d(1,1)"->"r"
+"d(1,1)"->"a0"
+"d(1,1)"->"a1"
+"d(1,1)"->"a2"
+"d(1,1)"->"a3"
+"d(1,1)"->"a4"
+"d(1,1)"->"a5"
+"d(1,1)"->"d(1,0)"
+"d(1,0)"[label="\N (23) : <26, (),3>", color=black]
+"d(1,0)"->"s"
+"d(1,0)"->"r"
+"d(1,0)"->"a0"
+"d(1,0)"->"a1"
+"d(1,0)"->"a2"
+"d(1,0)"->"a3"
+"d(1,0)"->"a4"
+"d(1,0)"->"a5"
+"d(1,0)"->"u(1,0)"
+"h1"[label="\N (62) : <1, (57, 62, 64, ),3>", color=black, shape=polygon ]
+"h1"->"k1"[color=red]
+"k1"[label="\N (57) : <1, (57, 64, ),2>", color=black]
+"k1"->"z"
+}

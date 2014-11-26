@@ -1,0 +1,13 @@
+examples/RandomGames/FM1.pg	9	0.042257	2	0.035784	4	0.124022	0.001186
+examples/RandomGames/FM2.pg	39	0.67358	2	0.18369	10	1.39074	0.002049
+examples/RandomGames/FM3.pg	92	4.31093	2	0.57426	14	5.82158	0.003488
+examples/RandomGames/FM4.pg	199	20.1899	3	1.82359	16	15.5946	0.008302
+examples/RandomGames/FM5.pg	416	75.4165	3	3.74284	20	39.7043	0.013683
+examples/RandomGames/FM6.pg	851	250.55	3	6.92309	24	87.676	0.021638
+examples/RandomGames/FM7.pg	1724	805.462	3	12.005	28	176.948	0.032461
+examples/RandomGames/FM8.pg	3471	2650.98	3	24.2984	32	409.261	0.061329
+examples/RandomGames/FM1.pg_dual	9	0.208738	9	0.206949	4	0.357192	0.006322
+examples/RandomGames/FM2.pg_dual	39	4.48961	39	4.65013	10	5.15831	0.009365
+examples/RandomGames/FM3.pg_dual	92	35.245	92	36.3699	14	21.9732	0.027755
+examples/RandomGames/FM4.pg_dual	199	200.517	199	202.256	16	56.5378	0.039963
+examples/RandomGames/FM5.pg_dual	416	864.317	416	909.13	20	140.753	0.067602

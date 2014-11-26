@@ -1,0 +1,124 @@
+digraph G { 
+"x"[label="\N (1)", color=black, shape=polygon ]
+"x"->"x"
+"T_x"[label="\N (2)" , style=filled, fillcolor=green ]
+"T_x"->"T_x"
+"s"[label="\N (32)" , color=black ]
+"s"->"z"
+"s"->"f0"
+"T_s"[label="\N (33)", fillcolor=green, style=filled, shape=polygon ]
+"T_s"->"T_z"
+"T_s"->"T_f0"
+"z"[label="\N (48)", color=black, shape=polygon ]
+"z"->"x"
+"T_z"[label="\N (49)" , style=filled, fillcolor=green ]
+"T_z"->"T_x"
+"f0"[label="\N (41)", color=black, shape=polygon ]
+"f0"->"e0"
+"T_f0"[label="\N (42)" , style=filled, fillcolor=green ]
+"T_f0"->"T_e0"
+"c"[label="\N (30)" , color=black ]
+"c"->"s"
+"c"->"r"
+"T_c"[label="\N (31)", fillcolor=green, style=filled, shape=polygon ]
+"T_c"->"T_s"
+"T_c"->"T_r"
+"r"[label="\N (34)" , color=black ]
+"r"->"z"
+"r"->"g0"
+"T_r"[label="\N (35)", fillcolor=green, style=filled, shape=polygon ]
+"T_r"->"T_z"
+"T_r"->"T_g0"
+"g0"[label="\N (10)" , color=black ]
+"g0"->"f0"
+"g0"->"k0"
+"T_g0"[label="\N (11)", fillcolor=green, style=filled, shape=polygon ]
+"T_g0"->"T_f0"
+"T_g0"->"T_k0"
+"a0"[label="\N (14)", color=black, shape=polygon ]
+"a0"->"t0"
+"T_a0"[label="\N (17)" , style=filled, fillcolor=green ]
+"T_a0"->"T_t0"
+"t0"[label="\N (13)" , color=black ]
+"t0"->"s"
+"t0"->"c"
+"t0"->"r"
+"T_t0"[label="\N (16)", fillcolor=green, style=filled, shape=polygon ]
+"T_t0"->"T_s"
+"T_t0"->"T_c"
+"T_t0"->"T_r"
+"a1"[label="\N (20)", color=black, shape=polygon ]
+"a1"->"t1"
+"T_a1"[label="\N (23)" , style=filled, fillcolor=green ]
+"T_a1"->"T_t1"
+"t1"[label="\N (19)" , color=black ]
+"t1"->"s"
+"t1"->"r"
+"t1"->"t0"
+"T_t1"[label="\N (22)", fillcolor=green, style=filled, shape=polygon ]
+"T_t1"->"T_s"
+"T_t1"->"T_r"
+"T_t1"->"T_t0"
+"a2"[label="\N (26)", color=black, shape=polygon ]
+"a2"->"t2"
+"T_a2"[label="\N (29)" , style=filled, fillcolor=green ]
+"T_a2"->"T_t2"
+"t2"[label="\N (25)" , color=black ]
+"t2"->"s"
+"t2"->"r"
+"t2"->"t1"
+"T_t2"[label="\N (28)", fillcolor=green, style=filled, shape=polygon ]
+"T_t2"->"T_s"
+"T_t2"->"T_r"
+"T_t2"->"T_t1"
+"d(0,1)"[label="\N (3)" , color=black ]
+"d(0,1)"->"s"
+"d(0,1)"->"r"
+"d(0,1)"->"a0"
+"d(0,1)"->"a1"
+"d(0,1)"->"a2"
+"d(0,1)"->"d(0,0)"
+"T_d(0,1)"[label="\N (4)", fillcolor=green, style=filled, shape=polygon ]
+"T_d(0,1)"->"T_s"
+"T_d(0,1)"->"T_r"
+"T_d(0,1)"->"T_a0"
+"T_d(0,1)"->"T_a1"
+"T_d(0,1)"->"T_a2"
+"T_d(0,1)"->"T_d(0,0)"
+"d(0,0)"[label="\N (5)" , color=black ]
+"d(0,0)"->"s"
+"d(0,0)"->"r"
+"d(0,0)"->"a0"
+"d(0,0)"->"a1"
+"d(0,0)"->"a2"
+"d(0,0)"->"e0"
+"T_d(0,0)"[label="\N (6)", fillcolor=green, style=filled, shape=polygon ]
+"T_d(0,0)"->"T_s"
+"T_d(0,0)"->"T_r"
+"T_d(0,0)"->"T_a0"
+"T_d(0,0)"->"T_a1"
+"T_d(0,0)"->"T_a2"
+"T_d(0,0)"->"T_e0"
+"e0"[label="\N (8)", color=black, shape=polygon ]
+"e0"->"d(0,1)"
+"e0"->"h0"
+"T_e0"[label="\N (9)" , style=filled, fillcolor=green ]
+"T_e0"->"T_d(0,1)"
+"T_e0"->"T_h0"
+"h0"[label="\N (44)", color=black, shape=polygon ]
+"h0"->"k0"
+"T_h0"[label="\N (47)" , style=filled, fillcolor=green ]
+"T_h0"->"T_k0"
+"m0"[label="\N (37)", color=black, shape=polygon ]
+"m0"->"e0"
+"T_m0"[label="\N (38)" , style=filled, fillcolor=green ]
+"T_m0"->"T_e0"
+"q0"[label="\N (43)", color=black, shape=polygon ]
+"q0"->"h0"
+"T_q0"[label="\N (46)" , style=filled, fillcolor=green ]
+"T_q0"->"T_h0"
+"k0"[label="\N (39)" , color=black ]
+"k0"->"z"
+"T_k0"[label="\N (40)", fillcolor=green, style=filled, shape=polygon ]
+"T_k0"->"T_z"
+}

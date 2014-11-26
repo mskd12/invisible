@@ -1,0 +1,126 @@
+digraph G { 
+0[label="\N (19)", fillcolor=green, style=filled, shape=polygon ]
+0->5
+0->23
+0->26
+1[label="\N (8)" , style=filled, fillcolor=green ]
+1->11
+1->16
+1->22
+2[label="\N (49)", fillcolor=green, style=filled, shape=polygon ]
+2->1
+2->25
+2->28
+3[label="\N (9)", fillcolor=green, style=filled, shape=polygon ]
+3->6
+3->7
+3->16
+3->28
+4[label="\N (23)" , style=filled, fillcolor=green ]
+4->2
+4->9
+4->29
+5[label="\N (34)" , style=filled, fillcolor=green ]
+5->1
+5->26
+5->29
+6[label="\N (16)" , style=filled, fillcolor=green ]
+6->3
+6->16
+6->23
+6->26
+7[label="\N (40)" , style=filled, fillcolor=green ]
+7->11
+7->15
+7->25
+7->28
+8[label="\N (31)", fillcolor=green, style=filled, shape=polygon ]
+8->0
+8->9
+9[label="\N (27)", fillcolor=green, style=filled, shape=polygon ]
+9->4
+9->10
+10[label="\N (45)" , style=filled, fillcolor=green ]
+10->16
+10->17
+10->23
+11[label="\N (29)", fillcolor=green, style=filled, shape=polygon ]
+11->3
+11->6
+11->14
+11->20
+12[label="\N (41)" , style=filled, fillcolor=green ]
+12->6
+12->13
+12->18
+12->22
+13[label="\N (25)" , style=filled, fillcolor=green ]
+13->9
+13->22
+13->28
+14[label="\N (11)" , style=filled, fillcolor=green ]
+14->0
+14->3
+15[label="\N (0)", fillcolor=green, style=filled, shape=polygon ]
+15->3
+15->7
+15->11
+15->21
+16[label="\N (38)" , style=filled, fillcolor=green ]
+16->6
+16->16
+16->29
+17[label="\N (47)", fillcolor=green, style=filled, shape=polygon ]
+17->3
+17->27
+18[label="\N (35)" , style=filled, fillcolor=green ]
+18->0
+18->10
+18->29
+19[label="\N (37)", fillcolor=green, style=filled, shape=polygon ]
+19->0
+19->18
+19->25
+20[label="\N (33)" , style=filled, fillcolor=green ]
+20->5
+20->21
+20->24
+21[label="\N (42)" , style=filled, fillcolor=green ]
+21->5
+21->8
+21->22
+22[label="\N (3)" , style=filled, fillcolor=green ]
+22->1
+22->3
+22->22
+22->26
+23[label="\N (12)", fillcolor=green, style=filled, shape=polygon ]
+23->4
+23->16
+23->22
+23->25
+24[label="\N (39)", fillcolor=green, style=filled, shape=polygon ]
+24->2
+24->28
+25[label="\N (18)" , style=filled, fillcolor=green ]
+25->7
+25->16
+25->25
+26[label="\N (5)" , style=filled, fillcolor=green ]
+26->3
+26->14
+27[label="\N (2)", fillcolor=green, style=filled, shape=polygon ]
+27->7
+27->23
+27->26
+28[label="\N (44)", fillcolor=green, style=filled, shape=polygon ]
+28->1
+28->10
+28->27
+28->29
+29[label="\N (13)" , style=filled, fillcolor=green ]
+29->3
+29->10
+29->17
+29->28
+}

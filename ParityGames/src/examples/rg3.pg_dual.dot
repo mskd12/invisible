@@ -1,0 +1,158 @@
+digraph G { 
+"0"[label="\N (19)" , style=filled, fillcolor=green ]
+"0"->"5"
+"0"->"15"
+"T_0"[label="\N (22)", color=black, shape=polygon ]
+"T_0"->"T_5"
+"T_0"->"T_15"
+"1"[label="\N (35)", color=black, shape=polygon ]
+"1"->"9"
+"1"->"11"
+"1"->"15"
+"T_1"[label="\N (38)" , style=filled, fillcolor=green ]
+"T_1"->"T_9"
+"T_1"->"T_11"
+"T_1"->"T_15"
+"2"[label="\N (49)", color=black, shape=polygon ]
+"2"->"3"
+"2"->"9"
+"2"->"12"
+"2"->"16"
+"T_2"[label="\N (52)" , style=filled, fillcolor=green ]
+"T_2"->"T_3"
+"T_2"->"T_9"
+"T_2"->"T_12"
+"T_2"->"T_16"
+"3"[label="\N (42)" , style=filled, fillcolor=green ]
+"3"->"0"
+"3"->"2"
+"3"->"15"
+"T_3"[label="\N (43)", color=black, shape=polygon ]
+"T_3"->"T_0"
+"T_3"->"T_2"
+"T_3"->"T_15"
+"4"[label="\N (30)", fillcolor=green, style=filled, shape=polygon ]
+"4"->"8"
+"4"->"9"
+"4"->"14"
+"4"->"18"
+"T_4"[label="\N (33)" , color=black ]
+"T_4"->"T_8"
+"T_4"->"T_9"
+"T_4"->"T_14"
+"T_4"->"T_18"
+"5"[label="\N (16)" , style=filled, fillcolor=green ]
+"5"->"5"
+"5"->"14"
+"T_5"[label="\N (21)", color=black, shape=polygon ]
+"T_5"->"T_5"
+"T_5"->"T_14"
+"6"[label="\N (23)" , style=filled, fillcolor=green ]
+"6"->"0"
+"6"->"10"
+"6"->"19"
+"T_6"[label="\N (24)", color=black, shape=polygon ]
+"T_6"->"T_0"
+"T_6"->"T_10"
+"T_6"->"T_19"
+"7"[label="\N (1)" , style=filled, fillcolor=green ]
+"7"->"3"
+"7"->"12"
+"T_7"[label="\N (2)", color=black, shape=polygon ]
+"T_7"->"T_3"
+"T_7"->"T_12"
+"8"[label="\N (4)" , style=filled, fillcolor=green ]
+"8"->"5"
+"8"->"13"
+"T_8"[label="\N (5)", color=black, shape=polygon ]
+"T_8"->"T_5"
+"T_8"->"T_13"
+"9"[label="\N (34)" , style=filled, fillcolor=green ]
+"9"->"13"
+"9"->"16"
+"T_9"[label="\N (37)", color=black, shape=polygon ]
+"T_9"->"T_13"
+"T_9"->"T_16"
+"10"[label="\N (27)", fillcolor=green, style=filled, shape=polygon ]
+"10"->"5"
+"10"->"11"
+"10"->"17"
+"10"->"19"
+"T_10"[label="\N (32)" , color=black ]
+"T_10"->"T_5"
+"T_10"->"T_11"
+"T_10"->"T_17"
+"T_10"->"T_19"
+"11"[label="\N (44)" , style=filled, fillcolor=green ]
+"11"->"6"
+"11"->"9"
+"11"->"17"
+"T_11"[label="\N (45)", color=black, shape=polygon ]
+"T_11"->"T_6"
+"T_11"->"T_9"
+"T_11"->"T_17"
+"12"[label="\N (10)" , style=filled, fillcolor=green ]
+"12"->"5"
+"12"->"10"
+"12"->"13"
+"12"->"16"
+"T_12"[label="\N (13)", color=black, shape=polygon ]
+"T_12"->"T_5"
+"T_12"->"T_10"
+"T_12"->"T_13"
+"T_12"->"T_16"
+"13"[label="\N (6)" , style=filled, fillcolor=green ]
+"13"->"10"
+"13"->"18"
+"T_13"[label="\N (7)", color=black, shape=polygon ]
+"T_13"->"T_10"
+"T_13"->"T_18"
+"14"[label="\N (46)" , style=filled, fillcolor=green ]
+"14"->"3"
+"14"->"8"
+"14"->"10"
+"T_14"[label="\N (47)", color=black, shape=polygon ]
+"T_14"->"T_3"
+"T_14"->"T_8"
+"T_14"->"T_10"
+"15"[label="\N (39)", color=black, shape=polygon ]
+"15"->"6"
+"15"->"9"
+"15"->"13"
+"15"->"15"
+"T_15"[label="\N (40)" , style=filled, fillcolor=green ]
+"T_15"->"T_6"
+"T_15"->"T_9"
+"T_15"->"T_13"
+"T_15"->"T_15"
+"16"[label="\N (15)", color=black, shape=polygon ]
+"16"->"4"
+"16"->"8"
+"16"->"16"
+"16"->"19"
+"T_16"[label="\N (18)" , style=filled, fillcolor=green ]
+"T_16"->"T_4"
+"T_16"->"T_8"
+"T_16"->"T_16"
+"T_16"->"T_19"
+"17"[label="\N (26)" , style=filled, fillcolor=green ]
+"17"->"6"
+"17"->"11"
+"17"->"15"
+"T_17"[label="\N (29)", color=black, shape=polygon ]
+"T_17"->"T_6"
+"T_17"->"T_11"
+"T_17"->"T_15"
+"18"[label="\N (9)", fillcolor=green, style=filled, shape=polygon ]
+"18"->"4"
+"18"->"14"
+"T_18"[label="\N (12)" , color=black ]
+"T_18"->"T_4"
+"T_18"->"T_14"
+"19"[label="\N (48)" , style=filled, fillcolor=green ]
+"19"->"8"
+"19"->"17"
+"T_19"[label="\N (51)", color=black, shape=polygon ]
+"T_19"->"T_8"
+"T_19"->"T_17"
+}

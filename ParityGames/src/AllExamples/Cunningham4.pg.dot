@@ -1,0 +1,60 @@
+digraph G { 
+"b1"[label="\N (9)" , color=black ]
+"b1"->"q0"
+"b2"[label="\N (11)" , color=black ]
+"b2"->"b1"
+"b3"[label="\N (13)" , color=black ]
+"b3"->"b2"
+"c0"[label="\N (15)" , color=black ]
+"c0"->"q0"
+"c1"[label="\N (17)" , color=black ]
+"c1"->"c0"
+"c2"[label="\N (19)" , color=black ]
+"c2"->"c1"
+"c3"[label="\N (21)" , color=black ]
+"c3"->"c2"
+"d1"[label="\N (27)" , color=black ]
+"d1"->"b1"
+"d2"[label="\N (29)" , color=black ]
+"d2"->"b2"
+"d3"[label="\N (31)" , color=black ]
+"d3"->"b3"
+"e0"[label="\N (33)" , color=black ]
+"e0"->"p1"
+"e1"[label="\N (35)" , color=black ]
+"e1"->"p0"
+"e2"[label="\N (37)" , color=black ]
+"e2"->"p0"
+"e3"[label="\N (39)" , color=black ]
+"e3"->"p0"
+"p0"[label="\N (56)", color=black, shape=polygon ]
+"p0"->"c3"
+"p1"[label="\N (25)", color=black, shape=polygon ]
+"p1"->"p0"
+"q0"[label="\N (57)", color=black, shape=polygon ]
+"x0"[label="\N (48)", color=black, shape=polygon ]
+"x0"->"e0"
+"x4"[label="\N (41)", color=black, shape=polygon ]
+"x4"->"x0"
+"q1"[label="\N (59)", color=black, shape=polygon ]
+"q1"->"x1"
+"x1"[label="\N (50)", color=black, shape=polygon ]
+"x1"->"d1"
+"x1"->"e1"
+"x5"[label="\N (43)", color=black, shape=polygon ]
+"x5"->"x1"
+"q2"[label="\N (61)", color=black, shape=polygon ]
+"q2"->"x2"
+"x2"[label="\N (52)", color=black, shape=polygon ]
+"x2"->"d2"
+"x2"->"e2"
+"x6"[label="\N (45)", color=black, shape=polygon ]
+"x6"->"x2"
+"q3"[label="\N (63)", color=black, shape=polygon ]
+"q3"->"x3"
+"x3"[label="\N (54)", color=black, shape=polygon ]
+"x3"->"d3"
+"x3"->"e3"
+"x7"[label="\N (47)", color=black, shape=polygon ]
+"x7"->"x3"
+}

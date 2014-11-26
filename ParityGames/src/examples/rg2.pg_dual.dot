@@ -1,0 +1,76 @@
+digraph G { 
+"0"[label="\N (16)", fillcolor=green, style=filled, shape=polygon ]
+"0"->"2"
+"0"->"7"
+"T_0"[label="\N (17)" , color=black ]
+"T_0"->"T_2"
+"T_0"->"T_7"
+"1"[label="\N (26)" , style=filled, fillcolor=green ]
+"1"->"0"
+"1"->"2"
+"1"->"6"
+"T_1"[label="\N (27)", color=black, shape=polygon ]
+"T_1"->"T_0"
+"T_1"->"T_2"
+"T_1"->"T_6"
+"2"[label="\N (22)" , style=filled, fillcolor=green ]
+"2"->"1"
+"2"->"2"
+"2"->"5"
+"2"->"8"
+"T_2"[label="\N (23)", color=black, shape=polygon ]
+"T_2"->"T_1"
+"T_2"->"T_2"
+"T_2"->"T_5"
+"T_2"->"T_8"
+"3"[label="\N (3)" , style=filled, fillcolor=green ]
+"3"->"0"
+"3"->"4"
+"3"->"7"
+"3"->"9"
+"T_3"[label="\N (6)", color=black, shape=polygon ]
+"T_3"->"T_0"
+"T_3"->"T_4"
+"T_3"->"T_7"
+"T_3"->"T_9"
+"4"[label="\N (0)", fillcolor=green, style=filled, shape=polygon ]
+"4"->"1"
+"4"->"7"
+"T_4"[label="\N (1)" , color=black ]
+"T_4"->"T_1"
+"T_4"->"T_7"
+"5"[label="\N (2)", fillcolor=green, style=filled, shape=polygon ]
+"5"->"3"
+"5"->"5"
+"5"->"7"
+"T_5"[label="\N (5)" , color=black ]
+"T_5"->"T_3"
+"T_5"->"T_5"
+"T_5"->"T_7"
+"6"[label="\N (7)", fillcolor=green, style=filled, shape=polygon ]
+"6"->"2"
+"6"->"5"
+"T_6"[label="\N (8)" , color=black ]
+"T_6"->"T_2"
+"T_6"->"T_5"
+"7"[label="\N (24)" , style=filled, fillcolor=green ]
+"7"->"1"
+"7"->"7"
+"T_7"[label="\N (25)", color=black, shape=polygon ]
+"T_7"->"T_1"
+"T_7"->"T_7"
+"8"[label="\N (10)" , style=filled, fillcolor=green ]
+"8"->"5"
+"8"->"6"
+"T_8"[label="\N (13)", color=black, shape=polygon ]
+"T_8"->"T_5"
+"T_8"->"T_6"
+"9"[label="\N (9)", color=black, shape=polygon ]
+"9"->"1"
+"9"->"8"
+"9"->"9"
+"T_9"[label="\N (12)" , style=filled, fillcolor=green ]
+"T_9"->"T_1"
+"T_9"->"T_8"
+"T_9"->"T_9"
+}

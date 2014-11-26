@@ -1,0 +1,2 @@
+# To generate random games 1--60
+pgsolver/bin/steadygame 1000 2 4 3 5 > finalexamples/steadygame-1000-2-4-3-5-60.pg

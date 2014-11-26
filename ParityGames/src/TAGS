@@ -1,0 +1,319 @@
+
+GPATH,343
+@3,8302
+ä	ˆ	,	Ðx Dä„$ÄdÀXðˆ ¸Pè€°Lè„ ¼L´dL´d4,8304
+ä	ˆ	,	Ðx Dä„$ÄdÀXðˆ ¸Pè€°Lè„ ¼L´dÄt$ÔŒLÌˆ@ô ”Dü´l,ì¬ll4,8304
+ä	ˆ	,	Ðx Dä„$ÄdÀXðˆ ¸Pè€°Lè„ ¼L´dÄt$ÔŒLÌˆ@ô ”Dü´l,ì¬l,ÜTŒ<ìœLüL4,8304
+
+Makefile,133
+PARSERDIR 6,186
+PARITYGAMEDIR 7,205
+SUBDIRS 9,228
+all:all12,288
+parser:parser28,977
+arena:arena31,1010
+clean:clean34,1046
+
+main.cpp,151
+Options options;47,1589
+const int Undef 48,1606
+int main(71,2553
+void parseCommandLineOptions(103,3514
+parityGame::Graph parseInputGraph(240,8468
+
+main.hpp,1239
+#define __MAIN_HPP__31,931
+enum AlgorithmName 40,1233
+  LocalStrategyImprovementEven,AlgorithmName::LocalStrategyImprovementEven41,1254
+  LocalStrategyImprovementOdd,AlgorithmName::LocalStrategyImprovementOdd42,1286
+  SymmetricStrategyImprovement,AlgorithmName::SymmetricStrategyImprovement43,1318
+  Zielonka,AlgorithmName::Zielonka44,1350
+  AllAlgorithmName::All45,1362
+enum SwitchRule 48,1372
+  SwitchAll,SwitchRule::SwitchAll49,1390
+  SwitchBest,SwitchRule::SwitchBest50,1403
+  SwitchRandom,SwitchRule::SwitchRandom51,1417
+  SwitchHalf,SwitchRule::SwitchHalf52,1433
+  LeastRecentlyConsidered,SwitchRule::LeastRecentlyConsidered53,1447
+  RandomFacet,SwitchRule::RandomFacet54,1474
+  RandomEdge,SwitchRule::RandomEdge55,1489
+  ZadehSwitchRule::Zadeh56,1503
+enum Verbosity 59,1515
+  Normal,Verbosity::Normal60,1532
+  DebugVerbosity::Debug61,1542
+struct Options 64,1554
+  std::string  input_file;Options::input_file65,1571
+  AlgorithmName algo;Options::algo66,1598
+  int vertex;Options::vertex67,1620
+  Verbosity verbosity;Options::verbosity68,1634
+  SwitchRule switch_rule;Options::switch_rule69,1657
+  bool dual;Options::dual70,1683
+  bool show;Options::show71,1696
+#define DEBUG(77,1953
+
+results,14
+file	lsi(1,0
+
+rg1.pg,12
+parity 1,0
+
+rg2.pg,12
+parity 1,0
+
+rg3.pg,12
+parity 1,0
+
+rg4.pg,12
+parity 1,0
+
+rg5.pg,12
+parity 1,0
+
+rg6.pg,12
+parity 1,0
+
+rg7.pg,12
+parity 1,0
+
+rg8.pg,12
+parity 1,0
+
+symSIM,19
+H‹0H‹25,104465
+
+arena/Graph.cpp,1926
+void Graph::add_vertex(39,1194
+void Graph::add_vertex(53,1429
+void Graph::set_successor(69,1748
+void Graph::fill_predecessors(74,1865
+Vertex& Graph::get_vertex(120,3311
+Vertex& Graph::get_vertex(133,3534
+int Graph::get_num_of_vertices(144,3743
+bool Graph::is_player_trivial(149,3805
+set<int> Graph::computeAttractor(161,4131
+set<int> Graph::computeClosedVertices(177,4420
+set<int> Graph::preImage(191,4690
+set<int> Graph::preImageClosed(229,5642
+Graph Graph::computeSubGame(248,6207
+Strategy Graph::getArbitraryStrategy(276,7069
+Strategy Graph::getRandomStrategy(336,8484
+Graph Graph::applyStrategy(401,10073
+PLAYER Graph::opponent(463,11545
+int Graph::get_sample(469,11632
+pair<set<int>, set<int> > Graph::PGSolve(479,11824
+bool Graph::can_self_reach(550,14129
+pair<Strategy, int>  Graph::strategyImprovement(603,15395
+pair<Strategy, int> Graph::symStrategyImprovement(620,15729
+pair<Strategy, int> Graph::strategyImprovement_one(638,16061
+pair<Strategy, int> Graph::strategyImprovement_two(661,16649
+pair<Strategy, int> Graph::symStrategyImprovement_two(684,17192
+Strategy Graph::getImprovedStrategy(723,18280
+Strategy Graph::getImprovedStrategy(751,19230
+Improvements Graph::get_improvements(825,21130
+Valuation Graph::computeValue_two(890,22923
+Valuation Graph::computeValue_one(901,23232
+Valuation Graph::computeValue_zero(912,23452
+void Graph::show(966,25265
+void Graph::show(984,25732
+void Graph::show(1003,26111
+void Graph::show(1023,26490
+void Graph::show(1042,26886
+set<int> Graph::get_vertices_of_parity(1061,27253
+void Graph::make_priorities_unique(1072,27494
+Graph Graph::compute_dual_game(1105,28284
+void Graph::output_dot(1141,29402
+void Graph::output_dot(1167,30083
+set<int> Graph::get_even_winning_set(1193,30883
+set<int> Graph::get_even_winning_set(1205,31168
+void Graph::output_dot(1214,31431
+void Graph::output_dot(1248,32499
+void Graph::output_dot(1282,33448
+
+arena/Graph.hpp,990
+#define __PARITY_GAME_HPP__31,962
+namespace parityGame 55,1363
+  class Graph parityGame::Graph58,1390
+    int n_vertices;parityGame::Graph::n_vertices60,1417
+    vector<Vertex> vertices;parityGame::Graph::vertices61,1437
+    set<int> preference_set;parityGame::Graph::preference_set62,1466
+    set<int> priority_set;parityGame::Graph::priority_set63,1496
+    vector<int> priority_sorted_vertex_list;parityGame::Graph::priority_sorted_vertex_list65,1529
+    vector<int> sorted_vertex_list;parityGame::Graph::sorted_vertex_list66,1599
+    vector<int> even_vertices;parityGame::Graph::even_vertices68,1667
+    vector<int> odd_vertices;parityGame::Graph::odd_vertices69,1698
+    Graph(parityGame::Graph::Graph73,1763
+    pair<parityGame::Graph::pair96,2623
+    pair<parityGame::Graph::pair97,2679
+    pair<parityGame::Graph::pair98,2729
+    pair<parityGame::Graph::pair140,4214
+    pair<parityGame::Graph::pair141,4274
+    pair<parityGame::Graph::pair142,4334
+
+arena/Improvements.cpp,282
+void Improvements::set_player 38,1041
+PLAYER Improvements::get_player 43,1105
+void Improvements::set_switches 48,1166
+void Improvements::set_switch 53,1257
+bool Improvements::is_empty 58,1347
+set<int> Improvements::get_switches 63,1444
+string Improvements::to_string(70,1582
+
+arena/Improvements.hpp,396
+#define __IMPROVEMENTS_HPP__31,977
+namespace parityGame 38,1106
+  class Improvements parityGame::Improvements40,1132
+    std::map<parityGame::Improvements::std::map42,1166
+    std::map<int, std::set<int> > switch_list;parityGame::Improvements::switch_list42,1166
+    PLAYER player;parityGame::Improvements::player43,1213
+    Improvements(parityGame::Improvements::Improvements46,1247
+
+arena/Makefile,38
+SRCDIR 1,0
+	ar rcs libPG.a $(14,508
+
+arena/Solver.cpp,210
+SymSIMStat Solver::solve(35,1001
+SymSIMStat Solver::zielonkaAlgorithm(95,2926
+SymSIMStat Solver::localStrategyImprovementAlgorithm(119,3613
+SymSIMStat Solver::symmetricStrategyImprovementAlgorithm(134,4006
+
+arena/Solver.hpp,199
+#define __SOLVER_HPP__31,959
+namespace parityGame 37,1054
+  class Solver parityGame::Solver39,1080
+    Solver(parityGame::Solver::Solver41,1107
+    ~Solver(parityGame::Solver::~Solver42,1122
+
+arena/Strategy.cpp,259
+void Strategy::set_type(36,1027
+void Strategy::set_decision(41,1083
+STRAT_TYPE Strategy::get_type(46,1159
+int Strategy::get_decision 51,1212
+Strategy Strategy::operator=(Strategy::operator=61,1360
+bool Strategy::operator==(Strategy::operator==69,1472
+
+arena/Strategy.hpp,342
+#define __STRTEGY_HPP__31,964
+namespace parityGame 38,1088
+  class Strategy parityGame::Strategy40,1114
+    STRAT_TYPE type;parityGame::Strategy::type42,1143
+    std::map<parityGame::Strategy::std::map43,1164
+    std::map<int, int> decision;parityGame::Strategy::decision43,1164
+    Strategy(parityGame::Strategy::Strategy45,1202
+
+arena/Valuation.cpp,71
+void Valuation::set_value 35,1010
+Value Valuation::get_value 40,1080
+
+arena/Valuation.hpp,291
+#define __VALUATION_HPP__31,968
+namespace parityGame 38,1089
+  class Valuation parityGame::Valuation40,1115
+    std::map<parityGame::Valuation::std::map42,1146
+    std::map<int, Value> value;parityGame::Valuation::value42,1146
+    Valuation(parityGame::Valuation::Valuation45,1193
+
+arena/Value.cpp,795
+Value::Value(41,1093
+Value::Value(47,1152
+Value::Value(53,1216
+void Value::set_best_priority(59,1291
+void Value::set_distance(64,1355
+void Value::set_transient_priority_set(68,1413
+void Value::add_transient(73,1500
+void Value::inc_distance(78,1602
+int Value::get_best_priority(83,1653
+set<int> Value::get_transient_priority_set(88,1714
+int Value::get_distance(93,1798
+string Value::to_string(98,1849
+void Value::print(109,2170
+Value& Value::operator=(Value::operator=119,2415
+bool Value::operator==(Value::operator==128,2593
+bool Value::operator!=(Value::operator!=135,2770
+int Value::computeMaxDiff(142,2950
+bool Value::operator<=(Value::operator<=167,3596
+bool Value::operator<(236,5969
+bool Value::operator>(241,6044
+bool Value::operator>=(Value::operator>=246,6102
+
+arena/Value.hpp,310
+#define __VALUE_HPP__31,956
+namespace parityGame 36,1015
+  class Value parityGame::Value38,1040
+    int best_priority;parityGame::Value::best_priority41,1072
+    std::set<int> transient_priority_set;parityGame::Value::transient_priority_set42,1139
+    int distance;parityGame::Value::distance43,1234
+
+arena/Vertex.cpp,381
+Vertex::Vertex(36,1021
+string Vertex::get_label(45,1201
+int Vertex::get_id(50,1250
+int Vertex::get_priority(55,1295
+int Vertex::get_original_priority(60,1347
+PLAYER Vertex::get_player(65,1421
+vector<int> Vertex::get_succ_list(70,1472
+vector<int> Vertex::get_pred_list(75,1531
+void Vertex::set_priority(80,1594
+void Vertex::add_succ(85,1650
+void Vertex::add_pred(90,1728
+
+arena/Vertex.hpp,519
+#define __VERTEX_HPP__31,959
+namespace parityGame 39,1100
+  class Vertex parityGame::Vertex41,1126
+    std::string label;parityGame::Vertex::label43,1154
+    int index;parityGame::Vertex::index44,1205
+    int priority;parityGame::Vertex::priority45,1257
+    int original_priority;parityGame::Vertex::original_priority46,1311
+    PLAYER player;parityGame::Vertex::player47,1376
+    std::vector<int> succ_v;parityGame::Vertex::succ_v49,1447
+    std::vector<int> pred_v;parityGame::Vertex::pred_v50,1498
+
+arena/commonFile.hpp,1386
+#define __COMMON_FILE_HPP__32,1020
+namespace parityGame 35,1064
+  enum PLAYER parityGame::PLAYER40,1175
+  enum PLAYER {even,parityGame::PLAYER::even40,1175
+  enum PLAYER {even, odd}parityGame::PLAYER::odd40,1175
+  enum STRAT_TYPE parityGame::STRAT_TYPE41,1202
+  enum STRAT_TYPE {s_even,parityGame::STRAT_TYPE::s_even41,1202
+  enum STRAT_TYPE {s_even, s_odd,parityGame::STRAT_TYPE::s_odd41,1202
+  enum STRAT_TYPE {s_even, s_odd, s_both,parityGame::STRAT_TYPE::s_both41,1202
+  enum STRAT_TYPE {s_even, s_odd, s_both, s_none}parityGame::STRAT_TYPE::s_none41,1202
+  enum SymSIMExceptions parityGame::SymSIMExceptions42,1253
+  enum SymSIMExceptions {VertexNotFound,parityGame::SymSIMExceptions::VertexNotFound42,1253
+  enum SymSIMExceptions {VertexNotFound, NoSuccessorFound,parityGame::SymSIMExceptions::NoSuccessorFound42,1253
+  enum SymSIMExceptions {VertexNotFound, NoSuccessorFound, EndOfFile,parityGame::SymSIMExceptions::EndOfFile42,1253
+  enum SymSIMExceptions {VertexNotFound, NoSuccessorFound, EndOfFile, FileNotFound}parityGame::SymSIMExceptions::FileNotFound42,1253
+  class SymSIMStat parityGame::SymSIMStat46,1379
+    std::set<int> even_winning_region;parityGame::SymSIMStat::even_winning_region48,1410
+    int iterations;parityGame::SymSIMStat::iterations49,1449
+    double runningTimeInSecs;parityGame::SymSIMStat::runningTimeInSecs50,1469
+
+arena/main.cpp,0
+
+arena/libPG.a,0
+
+arena/Vertex.o,0
+
+arena/Value.o,0
+
+arena/Valuation.o,0
+
+arena/Strategy.o,0
+
+arena/Solver.o,0
+
+arena/Improvements.o,0
+
+arena/Graph.o,0
+
+newcheck,0
+
+new_results,0
+
+README,0
+
+GTAGS,0
+
+GRTAGS,0
