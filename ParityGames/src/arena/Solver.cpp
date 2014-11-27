@@ -63,13 +63,13 @@ SymSIMStat Solver::solve(Graph PG, AlgorithmName algo)
     SymSIMStat lsi_even, lsi_odd, ssi, zie; 
     
     lsi_even = localStrategyImprovementAlgorithm(PG, parityGame::even);
-    lsi_odd = localStrategyImprovementAlgorithm(PG, parityGame::odd);
-    ssi = symmetricStrategyImprovementAlgorithm(PG);
+    //lsi_odd = localStrategyImprovementAlgorithm(PG, parityGame::odd);
+    //ssi = symmetricStrategyImprovementAlgorithm(PG);
     zie = zielonkaAlgorithm(PG);    
     
     if (lsi_even.iterations <  SymSIM_TIMEOUT) assert(lsi_even.even_winning_region == zie.even_winning_region);
-    if (lsi_odd.iterations <  SymSIM_TIMEOUT)  assert(lsi_odd.even_winning_region == zie.even_winning_region);
-    if (ssi.iterations <  SymSIM_TIMEOUT) assert(ssi.even_winning_region  == zie.even_winning_region);
+    //if (lsi_odd.iterations <  SymSIM_TIMEOUT)  assert(lsi_odd.even_winning_region == zie.even_winning_region);
+    //if (ssi.iterations <  SymSIM_TIMEOUT) assert(ssi.even_winning_region  == zie.even_winning_region);
     
     result = lsi_even;
 
@@ -77,8 +77,8 @@ SymSIMStat Solver::solve(Graph PG, AlgorithmName algo)
     else cerr << options.input_file << "\t";
     
     cerr << "lsi_even " << lsi_even.iterations << "\t" << lsi_even.runningTimeInSecs << "\t";
-    cerr << "lsi_odd " << lsi_odd.iterations << "\t" << lsi_odd.runningTimeInSecs << "\t";
-    cerr << "ssi " << ssi.iterations << "\t" << ssi.runningTimeInSecs << "\t";
+    //cerr << "lsi_odd " << lsi_odd.iterations << "\t" << lsi_odd.runningTimeInSecs << "\t";
+    //cerr << "ssi " << ssi.iterations << "\t" << ssi.runningTimeInSecs << "\t";
     cerr << "Zielonka " << zie.runningTimeInSecs << "\n";
     }
     break;

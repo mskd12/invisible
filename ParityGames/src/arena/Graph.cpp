@@ -31,6 +31,9 @@
 #include "Graph.hpp" 
 #include <random>       // std::default_random_engine
 #include <algorithm>    // std::shuffle
+#include <stack>
+#include <limits.h>
+#define NINF INT_MIN
 
 // #include <boost/graph/directed_graph.hpp> // A subclass to provide reasonable arguments to adjacency_list for a typical directed graph
 // #include <boost/graph/graphviz.hpp> // to display
@@ -193,6 +196,40 @@ set<int> Graph::computeAttractor(set<int> target, PLAYER pl)
   } while (!frontier.empty());
   
   return result;
+}
+
+set<int> Graph::computeAttractorVertex(set<int> vidSet)
+{
+	int vid = *(vidSet.begin());
+	map<int, bool> visited;
+	map<int, bool> present;
+	for (vector<Vertex>::iterator i = vertices.begin(); i != vertices.end(); i++)
+	{
+		int id = (*i).get_id();
+		visited[id] = false;
+		present[id] = false;
+	}
+	
+	set<int> result;
+	stack<int> traverse;
+	traverse.push(vid);
+	int curr;
+	while(traverse.empty() == false) {
+		curr = traverse.top();
+		traverse.pop();
+		vector<int> pred = get_vertex(curr).get_pred_list();
+		visited[curr] = true;
+		result.insert(curr);
+		for(vector<int>::iterator it = pred.begin(); it!=pred.end(); it++)
+		{
+			if(!visited[*it] && !present[*it]) 
+			{
+				present[*it] = true;
+				traverse.push(*it);
+			}
+		}
+	}
+	return result;
 }
 
 set<int> Graph::computeClosedVertices(set<int> target)
@@ -818,7 +855,198 @@ bool Graph::DFS(int v)
     return DFSUtil(v, visited, curr_priority, v);
 }
 
-void Graph::edgeRemove(int vid, PLAYER pl)
+// A recursive function used by longestPath. See below link for details
+// http://www.geeksforgeeks.org/topological-sorting/
+void Graph::topologicalSortUtil(int v, bool visited[], stack<int> &Stack)
+{
+    // Mark the current node as visited
+    visited[v] = true;
+    
+ 
+    // Recur for all the vertices adjacent to this vertex
+    vector<int> pred = get_vertex(v).get_pred_list();
+    for (vector<int>::iterator it = pred.begin(); it != pred.end(); ++it)
+    {
+        if (!visited[*it])
+            topologicalSortUtil(*it, visited, Stack);
+    }
+ 
+    // Push current vertex to stack which stores topological sort
+    //cout << get_vertex(v).get_priority() << " ";
+    Stack.push(v);
+ 
+}
+ 
+// The function to find longest distances from a given vertex. It uses
+// recursive topologicalSortUtil() to get topological sorting.
+void Graph::longestPath(int vid, Valuation &val)
+{
+    stack<int> Stack;
+    int V = get_num_of_vertices();
+    int dist[V];
+    map<int, vector<int> > list_priority;
+ 
+    // Mark all the vertices as not visited
+    bool *visited = new bool[V];
+    for (int i = 0; i < V; i++)
+        visited[i] = false;
+ 
+    // Call the recursive helper function to store Topological Sort
+    // starting from all vertices one by one
+    //cout << "Topological Sort - ";
+    topologicalSortUtil(vid, visited, Stack);
+    
+    //cout  << endl;
+    //Initialize distances to all vertices as infinite and distance
+    // to source as 0
+    for (int i = 0; i < V; i++)
+        dist[i] = NINF;
+    dist[vid] = 0;
+    vector <int> temp;
+    temp.push_back(get_vertex(vid).get_priority());    
+    list_priority[vid] = temp;
+ 
+    // Process vertices in topological order
+    while (Stack.empty() == false)
+    {
+        // Get the next vertex from topological order
+        int u = Stack.top();
+        Stack.pop();
+ 
+        // Update distances of all adjacent vertices
+        //cout << "u - " << u << endl;
+        vector<int> pred = get_vertex(u).get_pred_list();
+        if (dist[u] != NINF)
+        {
+		  //cout << "in" << endl;
+          for (vector<int>::iterator it = pred.begin(); it != pred.end(); ++it)
+             if (dist[*it] < dist[u] + 1) {
+				vector<int> t5 = list_priority[u];
+				t5.push_back(get_vertex(*it).get_priority());
+                list_priority[*it] = t5; 
+                dist[*it] = dist[u] + 1;
+			}
+        }
+    }
+    int key_priority = get_vertex(vid).get_priority();
+ 
+    // Print the calculated longest distances
+    for (vector<Vertex>::iterator it1 = vertices.begin(); it1!= vertices.end(); it1++) {
+		int i = (*it1).get_id();
+        if(dist[i] == NINF){
+			cout << "INF - Check something is wrong" << endl;
+			exit(1);
+		}
+		else {
+			Value v(key_priority,dist[i]);
+			//cout << get_vertex(i).get_priority() << " " << dist[i] << " ";
+			vector<int> s = list_priority[i];
+			set<int> temp;
+			v.set_transient_priority_set(temp);
+			for(vector<int>::iterator it = s.begin(); it!= s.end(); it++) 
+			{
+				//cout << *it << " ";
+				v.add_transient(*it);
+			}
+			val.set_value(i, v);
+			//cout << endl;
+		}
+	}
+	//show(val);
+	return;
+	
+	//exit(1);
+}
+
+int Graph::minDistance(map<int, int> &dist, map<int, bool> &sptSet)
+{
+   // Initialize min value
+   int min = INT_MAX, min_index;
+ 
+   for (vector<Vertex>::iterator it1 = vertices.begin(); it1!= vertices.end(); it1++) {
+     int v = (*it1).get_id();
+     if (sptSet[v] == false && dist[v] <= min)
+         min = dist[v], min_index = v;
+	 }
+ 
+   return min_index;
+}
+  
+// Funtion that implements Dijkstra's single source shortest path algorithm
+// for a graph represented using adjacency matrix representation
+void Graph::dijkstra(int src, Valuation &val)
+{
+     //int dist[V];     // The output array.  dist[i] will hold the shortest
+                      // distance from src to i
+     map<int, int> dist;
+     map<int, vector<int> > list_priority;
+ 
+     //bool sptSet[V]; // sptSet[i] will true if vertex i is included in shortest
+                     // path tree or shortest distance from src to i is finalized
+	 map<int, bool> sptSet;
+     // Initialize all distances as INFINITE and stpSet[] as false
+     for (vector<Vertex>::iterator it1 = vertices.begin(); it1!= vertices.end(); it1++) {
+        int i = (*it1).get_id();
+        dist[i] = INT_MAX, sptSet[i] = false;
+	 }
+ 
+     // Distance of source vertex from itself is always 0
+     dist[src] = 0;
+     vector <int> temp;
+	 temp.push_back(get_vertex(src).get_priority());    
+     list_priority[src] = temp;
+ 
+     // Find shortest path for all vertices
+     for (int count = 0; count < get_num_of_vertices()-1; count++)
+     {
+       // Pick the minimum distance vertex from the set of vertices not
+       // yet processed. u is always equal to src in first iteration.
+       int u = minDistance(dist, sptSet);
+       
+       // Mark the picked vertex as processed
+       sptSet[u] = true;
+ 
+       // Update dist value of the adjacent vertices of the picked vertex.
+       vector<int> pred = get_vertex(u).get_pred_list();
+       for(vector<int>::iterator it = pred.begin(); it!=pred.end(); it++) {
+		   if(!sptSet[*it] && dist[u] != INT_MAX && dist[u]+1 < dist[*it]) {
+				dist[*it] = dist[u] + 1;
+				vector<int> temp = list_priority[u];
+				temp.push_back(get_vertex(*it).get_priority());
+				list_priority[*it] = temp;
+		   }
+	   }
+     }
+     int key_priority = get_vertex(src).get_priority();
+     
+     for(vector<Vertex>::iterator it1 = vertices.begin(); it1!= vertices.end(); it1++) 
+     {
+		 int id = (*it1).get_id();
+		 if(dist[id] == INT_MAX) 
+		 {
+			 cout << "Check - Something is wrong" << endl;
+			 exit(1);
+		 }
+		 Value v(key_priority, dist[id]);
+		 set<int> temp;
+		 v.set_transient_priority_set(temp);	
+		 //cout << "Shortest distances" ;
+		 //cout << (*it1).get_priority() << " " << dist[id] << " ";
+		 for(vector<int>::iterator it = list_priority[id].begin(); it!=list_priority[id].end(); it++)
+		 {
+			 //cout << *it << " ";
+			 v.add_transient(*it);
+		 }
+		 //cout << endl;
+		 val.set_value(id, v);
+	 }
+	 //show(val);
+	 //exit(1);
+	 return;
+}
+
+
+Valuation Graph::edgeRemove(int vid, PLAYER pl, Valuation &result)
 {
 	vector<int> succ = get_vertex(vid).get_succ_list();
 	for(vector<int>::iterator it = succ.begin(); it!=succ.end(); it++)
@@ -836,7 +1064,7 @@ void Graph::edgeRemove(int vid, PLAYER pl)
 		if((get_vertex(*it).get_priority())%2 == 0)
 		//r is in R+ - parity even
 		{
-			cout << *it << " " << get_vertex(*it).get_priority() << " edgeRemove - case 1" << endl;
+			//cout << *it << " " << get_vertex(*it).get_priority() << " edgeRemove - case 1" << endl;
 			set<int> updatedVertices;
 			set<int> setVertices;
 			for (vector<Vertex>::iterator i = vertices.begin(); i != vertices.end(); i++)
@@ -850,7 +1078,9 @@ void Graph::edgeRemove(int vid, PLAYER pl)
 			Graph updatedGraph = computeSubGame1(updatedVertices);
 			set<int> target;
 			target.insert(vid);
-			set<int> requiredVertices = updatedGraph.computeClosedVertices(target);//W
+			set<int> requiredVertices = updatedGraph.computeAttractorVertex(target);//W
+			//set<int> check = updatedGraph.computeClosedVertices(target);
+			//if(requiredVertices!=check) cout << "Wrong" << endl;
 			set<int> set2;
 			set_difference(setVertices.begin(),setVertices.end(),
 				requiredVertices.begin(),requiredVertices.end(),
@@ -878,7 +1108,7 @@ void Graph::edgeRemove(int vid, PLAYER pl)
 		//r is in R- odd
 		{
 			//break;
-			cout << *it << " " << get_vertex(*it).get_priority() << " edgeRemove - case 2" << endl;
+			//cout << *it << " " << get_vertex(*it).get_priority() << " edgeRemove - case 2" << endl;
 			//set<int> updatedVertices;
 			set<int> setVertices;
 			for (vector<Vertex>::iterator i = vertices.begin(); i != vertices.end(); i++)
@@ -887,7 +1117,7 @@ void Graph::edgeRemove(int vid, PLAYER pl)
 			}
 			set<int> target;
 			target.insert(*it);
-			set<int> requiredVertices = computeClosedVertices(target);//U
+			set<int> requiredVertices = computeAttractorVertex(target);//U
 			set<int> set2;// V\U
 			set_difference(setVertices.begin(),setVertices.end(),
 				requiredVertices.begin(),requiredVertices.end(),
@@ -916,6 +1146,25 @@ void Graph::edgeRemove(int vid, PLAYER pl)
 		}
 		
 	}
+
+	int key_priority = get_vertex(vid).get_priority();
+	Value key_vertex_val(key_priority, 0);
+	
+	result.set_value(vid, key_vertex_val);
+	if((get_vertex(vid).get_priority())%2 == 0)
+	// t is in R+
+	{
+		// longest distances
+		longestPath(vid, result);
+		//cout << "Came - longest distances" << endl;
+	}
+	else
+	{
+		// shortest distances
+		dijkstra(vid, result);
+		//cout << "Came - shortest distances" << endl;
+	}
+	return result;
 }
 	
 
@@ -1517,6 +1766,7 @@ Valuation Graph::computeValueDirect_one(PLAYER pl)
   }
   //show();
   if (pl==even) {
+	cout << "pl is even When?" << endl;
 	exit(1);  
     for (vector<int>::iterator i = priority_sorted_vertex_list.begin(); i != priority_sorted_vertex_list.end(); i++)  
       { // Consider the vertices from most profitable to least profitable for Player Even
@@ -1558,33 +1808,47 @@ Valuation Graph::computeValueDirect_one(PLAYER pl)
       }
   } // if player is even, also add  else case.
   else {
+	set<int> temp;
+	for(vector<Vertex>::iterator it = vertices.begin(); it!= vertices.end(); it++)
+	{
+		temp.insert((*it).get_id());
+	}
+	//Graph copy = computeSubGame1(temp);
 	for (vector<int>::reverse_iterator i = sorted_vertex_list.rbegin(); i != sorted_vertex_list.rend(); ++i)
 	{
-		cout << *i << " " << get_vertex(*i).get_priority() << " ";
-		bool t = DFS(*i);
-		cout << t << endl;
+		if(temp.find(*i) == temp.end()) continue;
+		//cout << *i << " " << get_vertex(*i).get_priority() << " ";
+		Graph copy = computeSubGame1(temp);
+		bool t = copy.DFS(*i);
+		//cout << t << endl;
 		if(t)
 		{
+			//cout << "found a t" << endl;
 			set<int> defining_vertex ;
 			defining_vertex.insert(*i);
 			//cout << get_vertex(*i).get_priority() << " - " ;
-			set<int> t = computeClosedVertices(defining_vertex);
+			set<int> t = copy.computeAttractorVertex(defining_vertex);
 			/*
 			for(set<int>::iterator it = t.begin(); it!=t.end(); it++) {
 				cout << get_vertex(*it).get_priority() << " " ;
 			}
 			cout << endl;
 			*/
-			Graph subGame = computeSubGame1(t);
+			Graph subGame = copy.computeSubGame1(t);
 			//cout << get_vertex(*i).get_priority() << " - " ;
 			//cout << "Number of vertices - " << subGame.get_num_of_vertices() << endl;
-			subGame.edgeRemove(*i,pl);
-			subGame.show();
+			subGame.edgeRemove(*i,pl,result);
+			set<int> tempSet;
+			set_difference(temp.begin(), temp.end(), t.begin(), t.end(), inserter(tempSet, tempSet.begin()));
+			temp = tempSet;
+			//show(result);
 			
-			break;
+			//break;
 		}
 	}
-	exit(1);
+	//cout << "Over" << endl;
+	//show(result);
+	//exit(1);
   }
   return result;
 }

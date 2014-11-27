@@ -41,6 +41,7 @@
 #include <fstream>
 #include <limits>
 #include <ctime>
+#include <stack>
 
 #include "Value.hpp"
 #include "Valuation.hpp"
@@ -91,6 +92,7 @@ namespace parityGame {
     set<int> computeAttractor(set<int> target, PLAYER pl);
     set<int> preImageClosed(set<int> target); // One player version of preImage
     set<int> computeClosedVertices(set<int> target); // One player version of computeAttractor
+    set<int> computeAttractorVertex(set<int> vid);
         
     /* Parity Games Algorithms */
     pair<Strategy, int> strategyImprovement(PLAYER pl);
@@ -137,7 +139,11 @@ namespace parityGame {
     bool can_self_reach_zero(int vid);
     bool DFS(int v);
     bool DFSUtil(int v, bool visited[], int curr_priority, int vid);
-    void edgeRemove(int vid, PLAYER pl);
+    void topologicalSortUtil(int v, bool visited[], stack<int> &Stack);
+    void longestPath(int vid, Valuation &val);
+    int minDistance(map<int, int> &dist, map<int, bool> &sptSet);
+    void dijkstra(int src, Valuation &val);
+    Valuation edgeRemove(int vid, PLAYER pl, Valuation &v);
     PLAYER opponent(PLAYER pl);
         
     void output_dot(ostream& out, set<int> v);
