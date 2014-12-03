@@ -21,7 +21,7 @@ all:
 	@echo "#####################################################################"
 	@echo "### Making SymSIM                                                ####"
 	@echo "#####################################################################"
-	g++ -std=c++11 -w $(PARITYGAMEDIR)/*.o   $(PARSERDIR)/lex.yy.o  $(PARSERDIR)/parser.cc   main.cpp -o symSIM1
+	g++ -std=c++11 -Wall -w $(PARITYGAMEDIR)/*.o   $(PARSERDIR)/lex.yy.o  $(PARSERDIR)/parser.cc   main.cpp -o symSIM1
 
 #Rules to build individual targets
 

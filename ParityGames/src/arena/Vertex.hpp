@@ -59,6 +59,10 @@ namespace parityGame {
     PLAYER get_player();
     std::vector<int> get_succ_list();
     std::vector<int> get_pred_list();
+
+    /* OVerloading assignment and comparison operators */
+    Vertex& operator=(const Vertex &v);
+    bool operator==(Vertex v);
     
     void set_priority(int p);
     void add_succ(int succ_id); // Add a successor to this vertex

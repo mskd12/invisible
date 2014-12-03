@@ -76,6 +76,22 @@ vector<int> Vertex::get_pred_list()
 {
   return pred_v;
 }
+
+Vertex& Vertex::operator=(const Vertex &v)
+{
+  this->label = v.label; 
+  this->index = v.index; 
+  this->priority = v.priority;
+  this->original_priority = v.original_priority;
+  this->player = v.player;	
+  
+  return *this;
+}
+
+bool Vertex::operator==(Vertex v)
+{
+	return ((label==v.label) && (index == v.index) && (priority == v.priority) && (player == v.player));
+}
     
 void Vertex::set_priority(int p) 
 { 

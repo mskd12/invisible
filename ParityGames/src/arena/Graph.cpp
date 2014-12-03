@@ -70,10 +70,20 @@ void Graph::add_vertex(Vertex v)
 
 void Graph::add_vertex(string label, int id, int priority, PLAYER player)
 {
+  //cout << "In add_vertex" << endl;	
   Vertex v(label, id, priority, player);
-  
+  //cout << "abcd " << v.get_id() << v.get_priority() << v.get_label() << v.get_player() << endl;
+  /*
+  cout << "1234" << endl;
+  for(vector<Vertex>::iterator it = vertices.begin(); it!=vertices.end(); it++)
+  {
+	  cout << (*it).get_id() << " ";
+  }
+  cout << endl;
+  */
+
   this->vertices.push_back(v);
-  
+  //cout << "12443" << endl;
   if (v.get_player() == even) {
     this->even_vertices.push_back(n_vertices);
   }
@@ -82,6 +92,7 @@ void Graph::add_vertex(string label, int id, int priority, PLAYER player)
   }
   
   n_vertices++; 
+  //cout << "Out add_vertex" << endl;
 }
 
 void Graph::set_successor(string vertex, string succ)
@@ -336,28 +347,34 @@ Graph Graph::computeSubGame(set<int> vert_set_original)
 Graph Graph::computeSubGame1(set<int> vert_set_original)
 {
   Graph result;
+  //cout << "in computeSubGame1"<<endl;
   set<int> vert_set = vert_set_original;
   //  set<int> vert_set = Graph::computeClosedVertices(vert_set_original);
   
   for (vector<Vertex>::iterator i = vertices.begin(); i != vertices.end(); i++) {
     if (vert_set.find((*i).get_id()) != vert_set.end()) {
       // If the vertex *i is not in the vert_set 
+      //cout << "1111 " << (*i).get_id() << endl;
+      //cout << "Adding vertex" << endl;
       result.add_vertex((*i).get_label(), (*i).get_id(), (*i).get_priority(), (*i).get_player());  
       
+      //cout << "Before getting succ list" << endl;
       vector<int> succ_list = (*i).get_succ_list();
       vector<int>::iterator j = succ_list.begin();
-      
+      //cout << "succ list ";
       while (j != succ_list.end()) {
+		   //cout << *j << " ";
 	if (vert_set.find(*j) != vert_set.end()) {
 	  // If the vertex_id *j  is not in the vert_set 
 	  result.get_vertex((*i).get_id()).add_succ(*j);
 	}
 	j++;
       }
+      //cout << endl;
     }
   }
   result.fill_predecessors();
-  
+  //cout << "out computeSubGame1"<<endl;
   return result;
 }
 		
@@ -828,7 +845,6 @@ bool Graph::DFSUtil(int v, bool visited[], int curr_priority, int vid)
     // Mark the current node as visited and print it
     visited[v] = true;
     //cout << v << " ";
-    bool temp = false;
     // Recur for all the vertices adjacent to this vertex
 	vector<int> successors = get_vertex(v).get_succ_list();
 	for(vector<int>::iterator it = successors.begin(); it!=successors.end(); it++) {
@@ -847,7 +863,7 @@ bool Graph::DFS(int v)
 {
     // Mark all the vertices as not visited
     int V = get_num_of_vertices();
-    bool *visited = new bool[V];
+    bool visited[V];
     for(int i = 0; i < V; i++)
         visited[i] = false;
 	int curr_priority = get_vertex(v).get_priority();
@@ -857,7 +873,7 @@ bool Graph::DFS(int v)
 
 // A recursive function used by longestPath. See below link for details
 // http://www.geeksforgeeks.org/topological-sorting/
-void Graph::topologicalSortUtil(int v, bool visited[], stack<int> &Stack)
+void Graph::topologicalSortUtil(int v, map<int,bool> visited, stack<int> &Stack)
 {
     // Mark the current node as visited
     visited[v] = true;
@@ -881,30 +897,28 @@ void Graph::topologicalSortUtil(int v, bool visited[], stack<int> &Stack)
 // recursive topologicalSortUtil() to get topological sorting.
 void Graph::longestPath(int vid, Valuation &val)
 {
+	//cout << "In longest Path" << endl;
     stack<int> Stack;
-    int V = get_num_of_vertices();
-    int dist[V];
     map<int, vector<int> > list_priority;
  
     // Mark all the vertices as not visited
-    bool *visited = new bool[V];
-    for (int i = 0; i < V; i++)
-        visited[i] = false;
+    map<int, bool> visited;
+    map<int, int> dist;
+    for (vector<Vertex>::iterator it1 = vertices.begin(); it1!= vertices.end(); it1++) {
+		int i = (*it1).get_id();
+		visited[i] = false;
+		dist[i] = NINF;
+	}
+	dist[vid] = 0;
  
-    // Call the recursive helper function to store Topological Sort
-    // starting from all vertices one by one
     //cout << "Topological Sort - ";
     topologicalSortUtil(vid, visited, Stack);
-    
     //cout  << endl;
-    //Initialize distances to all vertices as infinite and distance
-    // to source as 0
-    for (int i = 0; i < V; i++)
-        dist[i] = NINF;
-    dist[vid] = 0;
+    
     vector <int> temp;
     temp.push_back(get_vertex(vid).get_priority());    
     list_priority[vid] = temp;
+    
  
     // Process vertices in topological order
     while (Stack.empty() == false)
@@ -915,6 +929,7 @@ void Graph::longestPath(int vid, Valuation &val)
  
         // Update distances of all adjacent vertices
         //cout << "u - " << u << endl;
+        
         vector<int> pred = get_vertex(u).get_pred_list();
         if (dist[u] != NINF)
         {
@@ -929,6 +944,7 @@ void Graph::longestPath(int vid, Valuation &val)
         }
     }
     int key_priority = get_vertex(vid).get_priority();
+    
  
     // Print the calculated longest distances
     for (vector<Vertex>::iterator it1 = vertices.begin(); it1!= vertices.end(); it1++) {
@@ -1048,6 +1064,9 @@ void Graph::dijkstra(int src, Valuation &val)
 
 Valuation Graph::edgeRemove(int vid, PLAYER pl, Valuation &result)
 {
+	//cout << "edgeRemove" << endl;
+	//show();
+	//if(vid == 36) show();
 	vector<int> succ = get_vertex(vid).get_succ_list();
 	for(vector<int>::iterator it = succ.begin(); it!=succ.end(); it++)
 	{
@@ -1155,6 +1174,7 @@ Valuation Graph::edgeRemove(int vid, PLAYER pl, Valuation &result)
 	// t is in R+
 	{
 		// longest distances
+		
 		longestPath(vid, result);
 		//cout << "Came - longest distances" << endl;
 	}
@@ -1170,6 +1190,7 @@ Valuation Graph::edgeRemove(int vid, PLAYER pl, Valuation &result)
 
 pair<Strategy, int>  Graph::strategyImprovement(PLAYER pl)
 {
+  cout << "strategyImprovement" << endl;
   pair<Strategy, int> result;;
   
   if (even_vertices.size() == 0) {
@@ -1234,11 +1255,13 @@ pair<Strategy, int> Graph::strategyImprovement_one(PLAYER pl)
  
 pair<Strategy, int> Graph::strategyImprovement_two(PLAYER pl)
 {
+  cout << "strategyImprovement_two" << endl;
   Strategy sigma  = (pl==even)?getArbitraryStrategy(s_even):getArbitraryStrategy(s_odd);
   // Strategy sigma  = (pl==even)?getRandomStrategy(s_even):getRandomStrategy(s_odd);
   Strategy sigma_prime;
   Valuation val;
-  int iter = 0; 
+  int iter = 0;
+  //show(); 
 
   while (true) {
     val = computeValue_two(sigma, pl);
@@ -1730,6 +1753,7 @@ Improvements Graph::get_opt_improvement(Strategy sigma, Valuation valn, PLAYER p
 Valuation Graph::computeValue_two(Strategy sigma, PLAYER pl) 
 {
   //show(sigma);
+  cout << "computeValue_two" << endl;
   Graph sub_game = applyStrategy(sigma);
   //sub_game.show(sigma);
 
@@ -1757,7 +1781,7 @@ Valuation Graph::computeValue_one(Strategy s)
 Valuation Graph::computeValueDirect_one(PLAYER pl)
 {
   assert(is_player_trivial(opponent(pl)));
-  
+  //cout << "computeValueDirect_one" << " Checking" << pl << endl;
   Valuation result;
   set<int> waiting;
   
@@ -1816,11 +1840,20 @@ Valuation Graph::computeValueDirect_one(PLAYER pl)
 	//Graph copy = computeSubGame1(temp);
 	for (vector<int>::reverse_iterator i = sorted_vertex_list.rbegin(); i != sorted_vertex_list.rend(); ++i)
 	{
+		//cout << *i << " " << temp.size() << " Checking" << endl;
+		if(temp.size() == 0) break;
+		//cout << 12333 << endl;
 		if(temp.find(*i) == temp.end()) continue;
+		//if(temp.size()==19) show();
+		
+		//cout << "124" << endl;
 		//cout << *i << " " << get_vertex(*i).get_priority() << " ";
 		Graph copy = computeSubGame1(temp);
+		//cout<< "Before DFS" << endl;
 		bool t = copy.DFS(*i);
-		//cout << t << endl;
+		//cout << "New t - "<< *i << " " << get_vertex(*i).get_priority() << " " << t << endl;
+		//if(*i != 37) copy.show();
+		
 		if(t)
 		{
 			//cout << "found a t" << endl;
@@ -1838,15 +1871,20 @@ Valuation Graph::computeValueDirect_one(PLAYER pl)
 			//cout << get_vertex(*i).get_priority() << " - " ;
 			//cout << "Number of vertices - " << subGame.get_num_of_vertices() << endl;
 			subGame.edgeRemove(*i,pl,result);
+			//cout << "edgeRemove Over" << endl;
+			//cout << "Old size - "<< temp.size() << endl;
 			set<int> tempSet;
 			set_difference(temp.begin(), temp.end(), t.begin(), t.end(), inserter(tempSet, tempSet.begin()));
 			temp = tempSet;
+			//cout << "New size" <<temp.size() << endl;
+			
 			//show(result);
 			
 			//break;
 		}
+		//cout << "check123"  << endl;
 	}
-	//cout << "Over" << endl;
+	//cout << "Over Checking" << endl;
 	//show(result);
 	//exit(1);
   }

@@ -139,7 +139,7 @@ namespace parityGame {
     bool can_self_reach_zero(int vid);
     bool DFS(int v);
     bool DFSUtil(int v, bool visited[], int curr_priority, int vid);
-    void topologicalSortUtil(int v, bool visited[], stack<int> &Stack);
+    void topologicalSortUtil(int v, map<int,bool> visited, stack<int> &Stack);
     void longestPath(int vid, Valuation &val);
     int minDistance(map<int, int> &dist, map<int, bool> &sptSet);
     void dijkstra(int src, Valuation &val);

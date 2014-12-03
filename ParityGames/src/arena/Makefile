@@ -8,7 +8,7 @@ all: parity_game
 
 parity_game: $(cppfiles) $(headers) $(SRCDIR)/main.hpp 
 	for i in $(sources) ; do \
-	(g++ -std=c++11 -c $$i.cpp -o $$i.o); \
+	(g++ -std=c++11 -Wall -c $$i.cpp -o $$i.o); \
 	done
 
 	ar rcs libPG.a $(objects)
