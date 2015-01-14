@@ -859,6 +859,7 @@ bool Graph::DFSUtil(int v, bool visited[], int curr_priority, int vid)
 }
  
 // DFS traversal of the vertices reachable from v. It uses recursive DFSUtil()
+// It returns true if there is atleast one cycle containing v in which v is the highest priority vertex
 bool Graph::DFS(int v)
 {
     // Mark all the vertices as not visited
